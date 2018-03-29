@@ -24,12 +24,6 @@ var NavTechService = function(opts) {
 
   self.jsencrypt = new JSEncrypt();
 
-  // self.availableServers = [
-  //   'navtech1.navcoin.org:3000',
-  //   'navtech2.navcoin.org:3000',
-  //   'navtech3.navcoin.org:3000',
-  //   'navtech4.navcoin.org:3000'
-  // ]
   self.availableServers = []
 };
 
@@ -42,21 +36,26 @@ NavTechService.singleton = function(opts) {
   return _navtechInstance;
 };
 
-NavTechService.prototype._checkNode = function(availableServers, numAddresses, callback) {
+NavTechService.prototype._checkNode = function(numAddresses, callback) {
   var self = this;
 
   self.getNavTechServers(function(error, servers) {
-    self.availableServers = servers;
 
-    if (!self.availableServers || self.availableServers.length === 0) {
+    if (!servers || servers.length === 0) {
       self.runtime.callback(false, { message: 'No valid NavTech servers found' });
       return;
     }
 
-    var randomIndex = Math.floor(Math.random() * availableServers.length)
-    var navtechServerUrl = 'https://' + availableServers[randomIndex] + '/api/check-node';
-
     var retrieve = function() {
+      if (servers.length === 0) {
+        self.$log.debug('Tried all NavTech Servers');
+        self.runtime.callback(false, { message: 'Failed to communicate with NavTech servers. Please goto settings and check you configuration.' });
+        return false
+      }
+
+      var randomIndex = Math.floor(Math.random() * servers.length)
+      var navtechServerUrl = servers[randomIndex] + '/api/check-node';
+
       // self.$log.debug('Fetching navtech server data');
       self.httprequest.post(navtechServerUrl, { num_addresses: numAddresses }).success(function(res){
         if(res && res.type === 'SUCCESS' && res.data) {
@@ -70,14 +69,14 @@ NavTechService.prototype._checkNode = function(availableServers, numAddresses, c
 
           callback(res.data, self, 0);
         } else {
-          // self.$log.debug('Bad response from navtech server ' + availableServers[randomIndex], res);
-          availableServers.splice(randomIndex, 1);
-          self._checkNode(availableServers, numAddresses, callback);
+          self.$log.debug('Bad response from navtech server ' + servers[randomIndex], res);
+          servers.splice(randomIndex, 1)
+          retrieve();
         }
       }).error(function(err) {
-        // self.$log.debug('Error fetching navtech server data', err);
-        availableServers.splice(randomIndex, 1);
-        self._checkNode(availableServers, numAddresses, callback);
+        self.$log.debug('Error fetching navtech server data', err);
+        servers.splice(randomIndex, 1)
+        retrieve();
       });
 
     };
@@ -193,27 +192,40 @@ NavTechService.prototype.findNode = function(amount, address, callback) {
   self.runtime.callback = callback;
   self.runtime.address = address;
   self.runtime.amount = amount;
-  self._checkNode(self.availableServers, 6, self._splitPayment);
+  self._checkNode(6, self._splitPayment);
 }
 
 NavTechService.prototype.addNode = function(newServer, callback) {
   var self = this;
+  // Add https if needed. remove trailing / if needed.
+  var serverURL = newServer.indexOf('https://') === -1 ? 'https://' + newServer : newServer
+  serverURL = serverURL[serverURL.length - 1] === '/' ? serverURL.slice(0, -1) : serverURL
 
   self.getNavTechServers(function(error, servers) {
     self.availableServers = servers;
 
     // If its already in the list. Exit
-    if (self.availableServers.indexOf(newServer) !== -1) {
+    if (self.availableServers.indexOf(serverURL) !== -1) {
       return callback(false,  self.availableServers);
     }
 
-    self.availableServers.push(newServer);
+    self.httprequest.post(serverURL + '/api/check-node', { num_addresses: 1 }).then(function successCB(res) {
 
-    self.storageService.setNavTechServers(self.availableServers, function(error) {
-      if (error) { return callback(error); }
-      self.$log.debug('Added new NavTech Server:' + newServer, self.availableServers);
+      if (res && res.data && res.data.type === 'SUCCESS') {
+        self.availableServers.push(serverURL);
 
-      callback(false,  self.availableServers);
+        self.storageService.setNavTechServers(self.availableServers, function(error) {
+          if (error) { return callback(error); }
+          self.$log.debug('Added new NavTech Server:' + serverURL, self.availableServers);
+
+          callback(false,  self.availableServers);
+        })
+      } else {
+        // API had incorrect response. Failed.
+        callback(res);
+      }
+    }, function errorCB(res) {
+      callback(res);
     })
   })
 }

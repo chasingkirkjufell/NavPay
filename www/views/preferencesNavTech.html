@@ -14,13 +14,14 @@
     <div class="addNavTechAddressContainer">
       <div class="item navTechAddAdress">
         <div>
-          <input type="text" class="navTechInput" placeholder="{{'Please enter NavTech URL. e.g. https://someNavTechServer.com:3000' | translate}}" ng-model="navTechAddress">
+          <i class="icon ion-ios-cloud-upload-outline abs-v-center" ng-class="{'ion-load-c loading': loading}"></i>
+          <input type="text" class="navTechInput" placeholder="{{'Please enter NavTech URL. e.g. https://SomeNavTechServer.com:3000' | translate}}" ng-model="navTechAddress">
           <button class="button button-input button-primary" ng-click="saveNavTechAddress(navTechAddress)">
             <span class="button-label" translate>Add</span>
           </button>
         </div>
       </div>
-      <p class="navTechParagraph" ng-show="navTechAddError">Invalid NavTech Server</p>
+      <p class="navTechParagraph error" ng-show="navTechAddError">Invalid NavTech Server</p>
     </div>
     <p class="navTechParagraph" ng-show="navTechServers.length === 0">No NavTech servers found. Please add a server to make private payments</p>
     <div class="list">

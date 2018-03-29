@@ -12,6 +12,8 @@ angular.module('copayApp.controllers').controller('tabSendController', function(
   $scope.isIOS = platformInfo.isIOS;
   $scope.privatePayment = false;
   $scope.privateToggleOn = false;
+  $scope.navTechError = false;
+  $scope.navTechLoading = false;
 
   $scope.sweepBtnDisabled = function() {
     var isDisabled = true;
@@ -61,7 +63,7 @@ angular.module('copayApp.controllers').controller('tabSendController', function(
         if (index == $scope.wallets.length) {
           $scope.checkingBalance = false;
           $timeout(function() {
-            $scope.$apply();
+            $scope.safeApply()
           });
         }
       });
@@ -183,6 +185,7 @@ angular.module('copayApp.controllers').controller('tabSendController', function(
       if (isValidTransaction()) {
         $scope.nextDisabled = false
       }
+      $scope.safeApply()
     }
 
     // if toggle is now on
@@ -194,6 +197,7 @@ angular.module('copayApp.controllers').controller('tabSendController', function(
         if (!servers || servers.length === 0) {
           $scope.nextDisabled = true
           $scope.showAddNavTech = true
+          $scope.safeApply()
         } else {
           // Aleady have servers. Just let them do private payment
           $scope.privatePayment = true
@@ -203,11 +207,22 @@ angular.module('copayApp.controllers').controller('tabSendController', function(
   }
 
   $scope.saveNavTechAddress = function(address) {
+    $scope.navTechLoading = true
+
     navTechService.addNode(address, function(error, result) {
-      if (error) { return $log.error(error) }
+      $scope.navTechLoading = false
+
+      if (error) {
+        $scope.navTechError = true
+        $scope.safeApply()
+        return $log.error(error)
+      }
+
+      $scope.navTechError = false
       $scope.navTechAddressSuccess = true
       $scope.privatePayment = true
       if (isValidTransaction()) { $scope.nextDisabled = false }
+      $scope.safeApply()
     })
   }
 
