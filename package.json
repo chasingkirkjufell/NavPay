@@ -80,7 +80,7 @@
     "cordova-windows": "~5.0.0"
   },
   "scripts": {
-    "postinstall": "bower install",
+    "postinstall": "npm run bower",
     "start": "npm run build:www && ionic serve --nolivereload --nogulp -s --address 0.0.0.0",
     "start:ios": "npm run build:www && npm run build:ios && npm run open:ios",
     "start:android": "npm run build:www && npm run build:android && npm run run:android",
@@ -98,6 +98,7 @@
     "build:windows-release": "cordova prepare windows && cordova build windows --release --arch=\"ARM\"",
     "build:desktop": "grunt desktop",
     "build:osx": "grunt osx",
+    "bower": "bower install",
     "open:ios": "open platforms/ios/*.xcodeproj",
     "open:android": "open -a open -a /Applications/Android\\ Studio.app platforms/android",
     "final:www": "npm run build:www-release",
