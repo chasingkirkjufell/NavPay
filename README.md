@@ -25,27 +25,33 @@ For a list of frequently asked questions please visit the [Copay FAQ](https://gi
 
 > **Note:** This method should only be used for development purposes. When running NavPay in a normal browser environment, browser extensions and other malicious code might have access to internal data and private keys. For production use, see the latest official [releases](https://github.com/bitpay/copay/releases/).
 
-Clone the repo and open the directory:
+Clone the repo and open the directory.
 
 ```sh
 git clone https://github.com/NAVCoin/NavPay.git
-cd copay
+cd NavPay
+npm install
 ```
 
-Ensure you have [Node](https://nodejs.org/) installed, then install and start Copay:
-
 ```sh
-npm run apply:copay
 npm start
 ```
 
-Visit [`localhost:8100`](http://localhost:8100/) to view the app.
+Visit [`0.0.0.0:8100`](http://0.0.0.0:8100/) to view the app.
 
 A watch task is also available to rebuild components of the app as changes are made. This task can be run in a separate process – while the server started by `npm start` is running – to quickly test changes.
 
 ```
 npm run watch
 ```
+
+To use on https, for use of Camera and other restricted APIs run
+
+```
+npm run https
+```
+
+Then visit [`https://localhost:8080/`](https://localhost:8080/) you can also visit your network IP on port 8080 to use on remote devices.
 
 ## Testing on Real Devices
 
