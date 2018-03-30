@@ -89,6 +89,7 @@ src/sass/app
 www/css/*
 www/js/*
 www/lib/angular-components.js
+src/js/appConfig.js
 
 # templates
 #/config.xml
