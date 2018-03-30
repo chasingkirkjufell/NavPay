@@ -13,5 +13,5 @@ func main() {
 	http.Handle("/", localProxy)
 
 	log.Println("Serving on localhost:8080")
-	log.Fatal(http.ListenAndServeTLS(":8080", "server.crt", "server.key", nil))
+	log.Fatal(http.ListenAndServeTLS(":8080", "https-server/server.crt", "https-server/server.key", nil))
 }

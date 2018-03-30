@@ -42,8 +42,8 @@ build/Release
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
 node_modules
 bower_components
-angular-bitcore-wallet-client/angular-bitcore-wallet-client.js
-angular-bitauth/angular-bitauth.js
+#angular-bitcore-wallet-client/angular-bitcore-wallet-client.js
+#angular-bitauth/angular-bitauth.js
 
 # Users Environment Variables
 .lock-wscript
@@ -88,23 +88,25 @@ src/sass/app
 # copay www
 www/css/*
 www/js/*
+www/lib/angular-components.js
+src/js/appConfig.js
 
 # templates
-/config.xml
-/ionic.config.json
-/appConfig.json
-externalServices.json
-app-template/bitpay-wallet
-src/js/appConfig.js
-src/js/externalServices.js
-chrome-app/manifest.json
+#/config.xml
+#/ionic.config.json
+#/appConfig.json
+#externalServices.json
+#app-template/bitpay-wallet
+#src/js/appConfig.js
+#src/js/externalServices.js
+#chrome-app/manifest.json
 
 # Firebase
 /GoogleService-Info.plist
 /google-services.json
 
 # package lock removed
-package-lock.json
+#package-lock.json
 
 # Dist folder
 dist
