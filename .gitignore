@@ -88,6 +88,7 @@ src/sass/app
 # copay www
 www/css/*
 www/js/*
+www/lib/angular-components.js
 
 # templates
 #/config.xml
