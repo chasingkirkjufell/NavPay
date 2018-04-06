@@ -511,9 +511,9 @@ angular.module('copayApp.services')
 
     var showWarningNoEncrypt = function(cb) {
       var title = gettextCatalog.getString('Are you sure?');
-      var msg = gettextCatalog.getString('Your wallet keys will be stored in plan text in this device, if an other app access the store it will be able to access your Bitcoin');
-      var yes = gettextCatalog.getString('Yes');
-      var no = gettextCatalog.getString('No');
+      var msg = gettextCatalog.getString('Your wallet keys will be stored in plain text and you will be vulnerable to having you coins stolen. We highly recommend pressing no and choosing a password.');
+      var yes = gettextCatalog.getString('No password');
+      var no = gettextCatalog.getString('Create password');
       popupService.showConfirm(title, msg, yes, no, function(res) {
         return cb(res);
       });
@@ -521,8 +521,8 @@ angular.module('copayApp.services')
 
     var encryptWallet = function(wallet, cb) {
 
-      var title = gettextCatalog.getString('Please enter a password to encrypt your wallet keys on this device storage');
-      var warnMsg = gettextCatalog.getString('Your wallet key will be encrypted. The Spending Password cannot be recovered. Be sure to write it down.');
+      var title = gettextCatalog.getString('Please enter a password to encrypt your wallet');
+      var warnMsg = gettextCatalog.getString('This password can never be recovered or reset!');
       askPassword(warnMsg, title, function(password) {
         if (!password) {
           showWarningNoEncrypt(function(res) {
