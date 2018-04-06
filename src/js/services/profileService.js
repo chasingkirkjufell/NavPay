@@ -65,6 +65,15 @@ angular.module('copayApp.services')
       });
     };
 
+    function _needsEncryption(wallet, cb) {
+      if (!wallet || !wallet.credentials) { return cb(false); }
+      if (wallet.credentials.network === 'testnet') { return cb(false); }
+      if (wallet.credentials.mnemonicEncrypted) { return cb(false); }
+      if (wallet.credentials.xPrivKeyEncrypted) { return cb(false); }
+      // not encrypted
+      return cb(true);
+    };
+
     function _balanceIsHidden(wallet, cb) {
       storageService.getHideBalanceFlag(wallet.credentials.walletId, function(err, shouldHideBalance) {
         if (err) $log.error(err);
@@ -95,6 +104,10 @@ angular.module('copayApp.services')
 
       _needsBackup(wallet, function(val) {
         wallet.needsBackup = val;
+      });
+
+      _needsEncryption(wallet, function(val) {
+        wallet.needsEncryption = val;
       });
 
       _balanceIsHidden(wallet, function(val) {

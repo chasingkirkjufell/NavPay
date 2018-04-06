@@ -154,12 +154,16 @@
       </div>
     </div> <!-- oh -->
 
-    <a class="wallet-not-backed-up-warning" ng-if="wallet.needsBackup" ui-sref="tabs.wallet.backupWarning({from: 'tabs.wallet'})" translate>
+    <a class="wallet-not-backed-up-warning" ng-if="wallet.needsBackup" ui-sref="tabs.wallet.backupWarning({walletId: wallet.id, from: 'tabs.wallet'})" translate>
       Wallet not backed up
     </a>
 
+    <span class="wallet-not-backed-up-warning" ng-if="wallet.needsEncryption" translate>
+      Wallet not encrypted. Set spending password to encrypt.
+    </span>
 
-    <a class="wallet-not-backed-up-warning" ng-if="lowUtxosWarning" ui-sref="tabs.wallet.addresses({walletId:wallet.id,from: 'tabs.wallet'})" translate>
+
+    <a class="wallet-not-backed-up-warning" ng-if="lowUtxosWarning" ui-sref="tabs.wallet.addresses({walletId:wallet.id, from: 'tabs.wallet'})" translate>
       Spending this balance will need significant NavCoin network fees
     </a>
 
