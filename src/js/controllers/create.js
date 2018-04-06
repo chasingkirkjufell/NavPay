@@ -218,7 +218,9 @@ angular.module('copayApp.controllers').controller('createController',
                 walletId: client.credentials.walletId
               });
             }, 100);
-          } else $state.go('tabs.home');
+          } else {
+            $state.go('onboarding.backupRequest', { walletId: client.credentials.walletId });
+          }
         });
       }, 300);
     }
