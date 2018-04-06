@@ -1,5 +1,7 @@
 'use strict';
 
+const workboxBuild = require('workbox-build');
+
 module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt);
@@ -9,14 +11,14 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     exec: {
+      buildSW: {
+        command: 'node ./util/buildServiceWorker.js'
+      },
       appConfig: {
         command: 'node ./util/buildAppConfig.js'
       },
       externalServices: {
         command: 'node ./util/buildExternalServices.js'
-      },
-      addManifest: {
-        command: 'node ./util/addManifest.js'
       },
       clean: {
         command: 'rm -Rf bower_components node_modules'
@@ -177,8 +179,8 @@ module.exports = function(grunt) {
       },
       prod: {
         files: {
-          'dist/www/js/app.js': ['dist/www/js/app.js'],
-          'dist/www/lib/angular-components.js': ['dist/www/lib/angular-components.js'],
+          'www/js/app.js': ['www/js/app.js'],
+          'www/lib/angular-components.js': ['www/lib/angular-components.js'],
         }
       }
     },
@@ -228,7 +230,7 @@ module.exports = function(grunt) {
           filter: 'isFile'
         }],
       },
-      dist: {expand: true, src: ['www/**'], dest: 'dist/'},
+      dist: {expand: true, src: ['www/**/!(*.js|*.css)'], dest: 'dist/'},
     },
     nwjs: {
       options: {
@@ -274,14 +276,14 @@ module.exports = function(grunt) {
         assetMap: false,
         hashLength: 8,             // Number of hex characters in the hash folder. (0 means no hashing is done).
         algorithm: 'md5',           // Crypto algorithm used to hash the contents.
-        srcBasePath: 'dist/www/',            // The directory prefix to be stripped from the asset map src paths.
+        srcBasePath: 'www/',            // The directory prefix to be stripped from the asset map src paths.
         destBasePath: 'dist/www/',           // The directory prefix to be stripped from the asset map dest paths.
         hashType: 'file',         // Defaults to `/$HASH/filename.ext`, but `'file'` will output `filename.$HASH.ext`.
-        references: ['dist/www/index.html', 'dist/www/cache.manifest']              // Files to replace references in (eg. a CSS file where `image.png` should become `image.$HASH.png`)
+        references: ['dist/www/index.html'] // Files to replace references in (eg. a CSS file where `image.png` should become `image.$HASH.png`)
       },
       your_target: {
         files: [
-          { src:  ['dist/www/**/*.js', 'dist/www/**/*.css'],  // A collection of assets to be hashed.
+          { src:  ['www/**/!(sw)*.js', 'www/**/*.css'],  // A collection of assets to be hashed.
             dest: 'dist/www/'          // A folder to contained the hashed assets. Cannot be a file.
           }
         ]
@@ -290,8 +292,9 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('default', ['nggettext_compile', 'exec:appConfig', 'exec:externalServices', 'browserify', 'sass', 'concat', 'copy:ionic_fonts', 'copy:ionic_js']);
-  grunt.registerTask('prod', ['default', 'exec:removeDist', 'copy:dist', 'uglify', 'exec:addManifest', 'asset_hash']);
-  grunt.registerTask('beta', ['default', 'exec:removeDist', 'copy:dist', 'exec:addManifest', 'asset_hash']);
+  grunt.registerTask('beta', ['default', 'build-dist']);
+  grunt.registerTask('prod', ['beta', 'uglify', 'build-dist']);
+  grunt.registerTask('build-dist', ['exec:removeDist', 'copy:dist', 'asset_hash', 'exec:buildSW']);
   grunt.registerTask('translate', ['nggettext_extract']);
   grunt.registerTask('desktop', ['prod', 'nwjs', 'copy:linux', 'compress:linux']);
   grunt.registerTask('osx', ['prod', 'nwjs', 'exec:macos', 'exec:osxsign']);

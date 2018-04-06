@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" manifest="cache.manifest">
+<html lang="en">
 <head ng-controller="headController">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -33,7 +33,15 @@
   <link rel="apple-touch-startup-image" sizes="768x1024" href="img/app/launch-screens/768x1024.png">
   <link rel="apple-touch-startup-image" sizes="1242x2208" href="img/app/launch-screens/1242x2208.png">
   <link rel="apple-touch-startup-image" sizes="1125x2436" href="img/app/launch-screens/1125x2436.png">
-
+  <script>
+    // Check that service workers are registered
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js');
+      });
+    }
+  </script>
   </head>
 <body>
 
