@@ -99,11 +99,6 @@ src/js/appConfig.js
 #src/js/externalServices.js
 #chrome-app/manifest.json
 
-# Firebase
-/GoogleService-Info.plist
-/google-services.json
-
-
 # Dist folder
 dist
 
