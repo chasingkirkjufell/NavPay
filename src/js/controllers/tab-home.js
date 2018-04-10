@@ -135,6 +135,10 @@ angular.module('copayApp.controllers').controller('tabHomeController',
         // Handles issues when no wallets exist and you are navigating the app
         $scope.loadingWallets = false;
       }, 2500);
+
+      $timeout(function() {
+        $rootScope.$apply();
+      }, 10);
     });
 
     $scope.$on("$ionicView.leave", function(event, data) {
@@ -244,6 +248,9 @@ angular.module('copayApp.controllers').controller('tabHomeController',
         });
       });
       $scope.loadingWallets = false;
+      $timeout(function() {
+        $rootScope.$apply();
+      }, 10);
     };
 
     var updateWallet = function(wallet) {

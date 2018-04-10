@@ -113,7 +113,12 @@
             <i ng-if="!wallet.balanceHidden && (wallet.status.totalBalanceSat != wallet.status.spendableAmount)" class="tab-home__wallet__status-icon ion-ios-timer-outline"></i>
             <span class="assertive" ng-if="wallet.error">{{wallet.error}}</span>
           </span>
-          &nbsp;
+          <span class="right text-light assertive" ng-show="wallet.isComplete() && wallet.needsBackup">
+            {{'Backup required' | translate}} &nbsp; &nbsp;
+          </span>
+          <span class="right text-light assertive" ng-show="wallet.isComplete() && wallet.needsEncryption">
+            {{'Encryption required' | translate}} &nbsp; &nbsp;
+          </span>
           </p>
           <i class="icon bp-arrow-right"></i>
         </a>
