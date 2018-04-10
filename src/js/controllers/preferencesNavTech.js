@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('copayApp.controllers').controller('preferencesNavTechController',
-  function($scope, $log, $timeout, $ionicHistory, navTechService ) {
+  function($scope, $log, $timeout, $ionicHistory, navTechService, externalLinkService, gettextCatalog ) {
 
     $scope.navTechServers = [];
     $scope.navTechAddress = '';
@@ -41,4 +41,14 @@ angular.module('copayApp.controllers').controller('preferencesNavTechController'
         }
       })
     });
+
+    $scope.viewNavTechServers = function() {
+      var url = 'https://navtechservers.com/';
+      var optIn = true;
+      var title = null;
+      var message = gettextCatalog.getString('Visit NavTechServers.com');
+      var okText = gettextCatalog.getString('Open Website');
+      var cancelText = gettextCatalog.getString('Go Back');
+      externalLinkService.open(url, optIn, title, message, okText, cancelText);
+    };
   });
