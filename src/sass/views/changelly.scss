@@ -3,13 +3,13 @@
   height: 500px;
   overflow-y: hidden;
   @media (max-width: 599px) {
-    height: 400px;
+    // height: 400px;
   }
   @media (max-width: 419px) {
-    height: 330px;
+    // height: 330px;
   }
   @media (max-width: 359px) {
-    height: 300px;
+    // height: 300px;
   }
 }
 #changelly-container {
@@ -18,13 +18,13 @@
   position: absolute;
   left: calc(-2500px + 50%);
   @media (max-width: 599px) {
-    height: 400px;
+    // height: 400px;
   }
   @media (max-width: 419px) {
-    height: 330px;
+    // height: 330px;
   }
   @media (max-width: 359px) {
-    height: 300px;
+    // height: 300px;
   }
 }
 
@@ -253,7 +253,6 @@
   .address {
     background: #fff;
     overflow: auto;
-    height: 100%;
     &-info {
       // padding-top: 22vh;
       // padding-bottom: 17vh;
@@ -306,8 +305,6 @@
   }
 
   .backup {
-    position: absolute;
-    top: 0;
     width: 100%;
     cursor: pointer;
     background-color: $wallet-backup-warning-color;
