@@ -1,6 +1,8 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('amountController', function($scope, $filter, $timeout, $ionicScrollDelegate, $ionicHistory, gettextCatalog, platformInfo, lodash, configService, rateService, $stateParams, $window, $state, $log, txFormatService, ongoingProcess, popupService, bwcError, payproService, profileService, bitcore, amazonService, nodeWebkitService) {
+angular.module('copayApp.controllers').controller('amountController', function($scope, $filter, $timeout, $ionicScrollDelegate, $ionicHistory, gettextCatalog, 
+  platformInfo, lodash, configService, rateService, $stateParams, $window, $state, $log, txFormatService, ongoingProcess, popupService, bwcError, payproService, 
+  profileService, bitcore, amazonService, nodeWebkitService,walletService) {
   var _id;
   var unitToSatoshi;
   var satToUnit;
@@ -86,6 +88,10 @@ angular.module('copayApp.controllers').controller('amountController', function($
     }
 
     processAmount();
+
+    $scope.wallets = profileService.getWallets();
+    var selectedWallet = checkSelectedWallet($scope.wallet, $scope.wallets);
+    $scope.onWalletSelect(selectedWallet);
 
     $timeout(function() {
       $ionicScrollDelegate.resize();
@@ -247,5 +253,19 @@ angular.module('copayApp.controllers').controller('amountController', function($
       });
     }
     $scope.useSendMax = null;
+  };
+
+  var checkSelectedWallet = function(wallet, wallets) {
+    if (!wallet) return wallets[0];
+    var w = lodash.find(wallets, function(w) {
+      return w.id == wallet.id;
+    });
+    if (!w) return wallets[0];
+    return wallet;
+  }
+
+  $scope.onWalletSelect = function(wallet) {
+    $scope.wallet = wallet;
+    $scope.setAddress();
   };
 });

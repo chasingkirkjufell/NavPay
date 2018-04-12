@@ -35,16 +35,26 @@
         <span class="m10l">{{toName || toAddress}}</span>
       </div>
     </div>
-
+    <div>
+    <div class="item item-no-bottom-border recipient-label" translate>Current Wallet</div>
+    <div class="item item-text-wrap item-icon-left bitcoin-address">
+        <i class="icon big-icon-svg">
+          <img src="img/app/icon.png" ng-class="{'wallet-background-color-default': !toColor}" class="bg"/>
+        </i>
+        <span class="m10l">
+          {{wallet.name || wallet.id}}:     
+          {{wallet.status.totalBalanceStr ? wallet.status.totalBalanceStr : ( wallet.cachedBalance ? wallet.cachedBalance + (wallet.cachedBalanceUpdatedOn ? ' &middot; ' + ( wallet.cachedBalanceUpdatedOn  * 1000 | amTimeAgo) : '') : ''  ) }}
+        </span> 
+      </div>
+    </div>
     <div ng-class="{'amount-pane-recipient': !customAmount && !nextStep,
       'amount-pane-no-recipient': customAmount || nextStep}">
-
+      
       <div class="amount-bar oh">
         <div class="title">
           <span translate>Amount</span>
         </div>
       </div>
-
       <div class="amount">
         <div class="amount__editable" ng-class="{'amount__editable--minimize': smallFont, 'amount__editable--standard': !smallFont, 'amount__editable--placeholder': !amount}">
           <span class="amount__number">{{amount || "0.00" }}</span>
