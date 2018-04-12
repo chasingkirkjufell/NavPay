@@ -3,13 +3,13 @@
   height: 500px;
   overflow-y: hidden;
   @media (max-width: 599px) {
-    // height: 400px;
+    height: 400px;
   }
   @media (max-width: 419px) {
-    // height: 330px;
+    height: 330px;
   }
   @media (max-width: 359px) {
-    // height: 300px;
+    height: 300px;
   }
 }
 #changelly-container {
@@ -18,13 +18,13 @@
   position: absolute;
   left: calc(-2500px + 50%);
   @media (max-width: 599px) {
-    // height: 400px;
+    height: 400px;
   }
   @media (max-width: 419px) {
-    // height: 330px;
+    height: 330px;
   }
   @media (max-width: 359px) {
-    // height: 300px;
+    height: 300px;
   }
 }
 
@@ -65,7 +65,7 @@
   margin-bottom: 20px;
 }
 
-#tab-changelly{
+#tab-changelly {
   @extend .deflash-blue;
 
   .icon-create-wallet {
@@ -254,19 +254,8 @@
     background: #fff;
     overflow: auto;
     &-info {
-      // padding-top: 22vh;
-      // padding-bottom: 17vh;
       padding-top: 20px;
       padding-bottom: 15px;
-      // @media(max-height: 800px) {
-      //   padding-top: 17vh;
-      // }
-      // @media(max-height: 700px) {
-      //   padding-top: 14vh;
-      // }
-      // @media(max-height: 600px) {
-      //   padding-top: 7vh;
-      // }
       text-align: center;
       .address-label {
         margin-top: 5%;
@@ -321,4 +310,9 @@
     width: 100%;
   }
 
+  .wallet-name {
+    color: $nav-purple;
+    font-weight: bold;
+    font-size: 110%;
+  }
 }
