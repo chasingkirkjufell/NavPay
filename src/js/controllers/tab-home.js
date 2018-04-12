@@ -307,4 +307,14 @@ angular.module('copayApp.controllers').controller('tabHomeController',
       }, 300);
       updateAllWallets();
     };
+
+    $scope.openChangellyWeb = function() {
+      var url = 'https://changelly.com/';
+      var optIn = true;
+      var title = null;
+      var message = gettextCatalog.getString('Visit Changelly.com');
+      var okText = gettextCatalog.getString('Open Website');
+      var cancelText = gettextCatalog.getString('Go Back');
+      externalLinkService.open(url, optIn, title, message, okText, cancelText);
+    };
   });
