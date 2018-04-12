@@ -1610,7 +1610,7 @@ msgid "No Wallet"
 msgstr "Keine Wallet"
 
 #: www/views/onboarding/backupRequest.html:5
-msgid "No backup, no Nav Coin."
+msgid "No backup, no NavCoin."
 msgstr "Keine Backup, keine Nav Coins."
 
 #: www/views/addressbook.html:19
@@ -2108,7 +2108,7 @@ msgid "Request Specific amount"
 msgstr "Einen bestimmten Betrag anfordern"
 
 #: www/views/preferences.html:47
-msgid "Request Spending Password"
+msgid "Set Spending Password"
 msgstr "Berechtigungscode abfragen"
 
 #: www/views/tab-create-shared.html:42
@@ -3109,9 +3109,8 @@ msgstr ""
 msgid "Your Nav Coin wallet is backed up!"
 msgstr "Ihre Nav Coin-Wallet wurde gesichert!"
 
-#: www/views/tab-home.html:36
-msgid "Your Nav Coin wallet is ready!"
-msgstr "Ihre Nav Coin-Wallet ist fertig!"
+msgid "Your NavCoin wallet is ready!"
+msgstr "Ihre NavCoin wallet ist fertig!"
 
 #: www/views/feedback/send.html:42
 msgid "Your ideas, feedback, or comments"

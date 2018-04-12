@@ -49,20 +49,20 @@
         </div>
         <div ng-show="showAddNavTech" class="addNavTechIPContainer">
           <div ng-hide="navTechAddressSuccess">
-            <p>No NavTech servers found. Please add a NavTech server to make private payments.</p>
+            <p translate>No NavTech servers found. Please add a NavTech server to make private payments.</p>
             <p>See <a href="#" ng-click="viewNavTechServers()">navtechservers.com</a> for more details.</p>
             <div class="item input search-wrapper">
               <i class="icon ion-ios-cloud-upload-outline abs-v-center navTechIcon" ng-class="{'ion-load-c navTechLoading': navTechLoading}"></i>
               <div class="item-icon-right">
-                <input type="text" class="search-input" placeholder="{{'Please enter NavTech URL. e.g. https://SomeNavTechServer.com:3000' | translate}}" ng-model="formData.navTechAddress">
+                <input type="text" class="search-input" placeholder="{{'Please enter a NavTech URL. e.g. https://SomeNavTechServer.com:3000' | translate}}" ng-model="formData.navTechAddress">
                 <button class="button button-input button-primary" ng-click="saveNavTechAddress(formData.navTechAddress)">
                   <span class="button-label" translate>Save</span>
                 </button>
               </div>
             </div>
           </div>
-          <p class="navTechErrorText" ng-show="navTechError">Invalid server</p>
-          <p class="navTechSuccessText" ng-class="{'showNavTechSuccess': navTechAddressSuccess}">NavTech Server successfully added</p>
+          <p class="navTechErrorText" ng-show="navTechError" translate>Invalid server</p>
+          <p class="navTechSuccessText" ng-class="{'showNavTechSuccess': navTechAddressSuccess}" translate>NavTech Server successfully added</p>
         </div>
         <div class="send-next-button">
           <button ng-disabled="nextDisabled" class="button button-standard button-primary"

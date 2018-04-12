@@ -1610,7 +1610,7 @@ msgid "No Wallet"
 msgstr "Brak portfela"
 
 #: www/views/onboarding/backupRequest.html:5
-msgid "No backup, no Nav Coin."
+msgid "No backup, no NavCoin."
 msgstr "Nie ma kopii zapasowej - nie ma Nav Coinów."
 
 #: www/views/addressbook.html:19
@@ -2108,7 +2108,7 @@ msgid "Request Specific amount"
 msgstr "Prośba o konkretną kwotę"
 
 #: www/views/preferences.html:47
-msgid "Request Spending Password"
+msgid "Set Spending Password"
 msgstr "Wprowadź hasło wypłaty"
 
 #: www/views/tab-create-shared.html:42
@@ -3109,8 +3109,7 @@ msgstr ""
 msgid "Your Nav Coin wallet is backed up!"
 msgstr "Kopia zapasowa portfela została utworzona!"
 
-#: www/views/tab-home.html:36
-msgid "Your Nav Coin wallet is ready!"
+msgid "Your NavCoin wallet is ready!"
 msgstr "Twój portfel jest gotowy!"
 
 #: www/views/feedback/send.html:42

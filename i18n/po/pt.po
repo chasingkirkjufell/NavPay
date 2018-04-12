@@ -1610,7 +1610,7 @@ msgid "No Wallet"
 msgstr "Sem carteira"
 
 #: www/views/onboarding/backupRequest.html:5
-msgid "No backup, no Nav Coin."
+msgid "No backup, no NavCoin."
 msgstr "Sem backup, sem Nav Coin."
 
 #: www/views/addressbook.html:19
@@ -2108,7 +2108,7 @@ msgid "Request Specific amount"
 msgstr "Solicitar quantia exata"
 
 #: www/views/preferences.html:47
-msgid "Request Spending Password"
+msgid "Set Spending Password"
 msgstr "Solicitar senha de pagamento"
 
 #: www/views/tab-create-shared.html:42
@@ -3109,9 +3109,8 @@ msgstr "Seu NavPay Card está pronto. Adicione fundos ao seu cartão para começ
 msgid "Your Nav Coin wallet is backed up!"
 msgstr "O backup de sua carteira de Nav Coins está feito!"
 
-#: www/views/tab-home.html:36
-msgid "Your Nav Coin wallet is ready!"
-msgstr "Sua carteira de Nav Coins está pronta!"
+msgid "Your NavCoin wallet is ready!"
+msgstr "Sua carteira de NavCoins está pronta!"
 
 #: www/views/feedback/send.html:42
 msgid "Your ideas, feedback, or comments"
