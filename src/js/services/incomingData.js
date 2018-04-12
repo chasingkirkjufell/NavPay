@@ -10,8 +10,15 @@ angular.module('copayApp.services').factory('incomingData', function($log, $stat
 
   root.redir = function(data, privatePayment, stopRedirect) {
     $log.debug('Processing incoming data: ' + data);
+    function sanitizeData(data) {
+      data = data.replace('navcoin:', 'bitcoin:')
 
-    function sanitizeUri(data) {
+      // When we get a QR code, add bitcoin in front and see if it makes a valid address
+      var testBitcoinAddress = 'bitcoin:' + data
+      if (bitcore.URI.isValid(testBitcoinAddress)) {
+        data: 'bitcoin:' + data
+      }
+
       // Fixes when a region uses comma to separate decimals
       var regex = /[\?\&]amount=(\d+([\,\.]\d+)?)/i;
       var match = regex.exec(data);
@@ -81,7 +88,7 @@ angular.module('copayApp.services').factory('incomingData', function($log, $stat
       return true;
     }
 
-    data = sanitizeUri(data);
+    data = sanitizeData(data);
 
     // BIP21
     if (bitcore.URI.isValid(data)) {
