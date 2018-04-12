@@ -1634,7 +1634,7 @@ msgid "No Wallet"
 msgstr "Нет кошельков"
 
 #: www/views/onboarding/backupRequest.html:5
-msgid "No backup, no Nav Coin."
+msgid "No backup, no NavCoin."
 msgstr "Нет резервной копии - нет биткойнов."
 
 #: www/views/addressbook.html:19
@@ -2149,7 +2149,7 @@ msgid "Request Specific amount"
 msgstr "Запросить определенную сумму"
 
 #: www/views/preferences.html:47
-msgid "Request Spending Password"
+msgid "Set Spending Password"
 msgstr "Запрашивать платёжный пароль"
 
 #: www/views/tab-create-shared.html:42
@@ -3149,8 +3149,7 @@ msgstr ""
 msgid "Your Nav Coin wallet is backed up!"
 msgstr "Резервная копия кошелька создана!"
 
-#: www/views/tab-home.html:36
-msgid "Your Nav Coin wallet is ready!"
+msgid "Your NavCoin wallet is ready!"
 msgstr "Ваш кошелёк готов!"
 
 #: www/views/feedback/send.html:42

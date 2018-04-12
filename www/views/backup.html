@@ -22,8 +22,8 @@
         </div>
       </div>
       <div>
-        <button copy-to-clipboard="copyRecoveryPhrase()">Copy to clipboard</button>
-        <button ng-click="generateQrCode()">show QR code</button>
+        <button copy-to-clipboard="copyRecoveryPhrase()" translate>Copy to clipboard</button>
+        <button ng-click="generateQrCode()" translate>Show QR Code</button>
         <div ng-include="'views/tab-export-qrCode.html'" ng-if="formData.supported"></div>
       </div>
       <div class="password-required" ng-show="mnemonicHasPassphrase" translate>

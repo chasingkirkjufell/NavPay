@@ -1610,7 +1610,7 @@ msgid "No Wallet"
 msgstr "Sin billetera"
 
 #: www/views/onboarding/backupRequest.html:5
-msgid "No backup, no Nav Coin."
+msgid "No backup, no NavCoin."
 msgstr "Sin copia de seguridad, no hay Nav Coins."
 
 #: www/views/addressbook.html:19
@@ -2108,7 +2108,7 @@ msgid "Request Specific amount"
 msgstr "Solicitar importe Especifico"
 
 #: www/views/preferences.html:47
-msgid "Request Spending Password"
+msgid "Set Spending Password"
 msgstr "Solicitar contraseña para pagos"
 
 #: www/views/tab-create-shared.html:42
@@ -3109,9 +3109,8 @@ msgstr "Tu Tarjeta NavPay ya esta lista. Agrega fondos para comenzar a utilizarl
 msgid "Your Nav Coin wallet is backed up!"
 msgstr "¡Su billetera Nav Coin está resguardada!"
 
-#: www/views/tab-home.html:36
-msgid "Your Nav Coin wallet is ready!"
-msgstr "¡Su billetera Nav Coin está lista!"
+msgid "Your NavCoin wallet is ready!"
+msgstr "¡Su billetera NavCoin está lista!"
 
 #: www/views/feedback/send.html:42
 msgid "Your ideas, feedback, or comments"
@@ -3244,3 +3243,79 @@ msgstr "Cargando casa de intercambio Changelly"
 #: tab-send.html:24
 msgid "Next"
 msgstr "Siguiente"
+
+msgid "NavTech / Private Payment Servers"
+msgstr "NavTech / Servidores de pago privados"
+
+msgid "Encryption required"
+msgstr "Cifrado requerido"
+
+msgid "Backup required"
+msgstr "Necesita respaldar"
+
+msgid "Copy to clipboard"
+msgstr "Copiar al portapapeles"
+
+msgid "Show QR Code"
+msgstr "Mostrar código QR"
+
+msgid "Anyone with your backup phrase can access or spend your NavCoin."
+msgstr "Cualquiera con su frase de respaldo puede acceder o gastar nuestro NavCoin."
+
+msgid "Buy Nav"
+msgstr "Compra Nav"
+
+msgid "Wallet not encrypted. Set spending password to encrypt."
+msgstr "Monedero no encriptado Configure el gasto de contraseña para encriptar."
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "OK"
+msgstr "De acuerdo"
+
+msgid "Please enter a password to encrypt your wallet"
+msgstr "Por favor ingrese una contraseña para encriptar su billetera"
+
+msgid "This password can never be recovered or reset!"
+msgstr "¡Esta contraseña nunca puede ser recuperada o restablecida!"
+
+msgid "Are you sure?"
+msgstr "¿Estás seguro?"
+
+msgid "Your wallet keys will be stored in plain text and you will be vulnerable to having you coins stolen. We highly recommend pressing no and choosing a password."
+msgstr "Las llaves de su billetera se almacenarán en texto sin formato y será vulnerable a que le roben las monedas. Recomendamos presionar no y elegir una contraseña."
+
+msgid "Create password"
+msgstr "Crear contraseña"
+
+msgid "No password"
+msgstr "Sin contraseña"
+
+msgid "NavCoin is different &ndash; it cannot be safely held with a bank or web service."
+msgstr "NavCoin es diferente &ndash; no se puede mantener de forma segura con un banco o servicio web."
+
+msgid "No NavTech servers found. Please add a NavTech server to make private payments."
+msgstr "No se encontraron servidores NavTech. Agregue un servidor NavTech para hacer pagos privados."
+
+msgid "Invalid server"
+msgstr "Servidor inválido"
+
+msgid "NavTech Server successfully added"
+msgstr "NavTech Server se agregó con éxito"
+
+msgid "Please enter a NavTech URL. e.g. https://SomeNavTechServer.com:3000"
+msgstr "Por favor ingrese una URL de NavTech. p.ej. https://SomeNavTechServer.com:3000"
+
+msgid "Add a NavTech server to create private payments."
+msgstr "Agregue un servidor NavTech para crear pagos privados."
+
+msgid "No NavTech servers found. Please add a server to make private payments"
+msgstr "No se encontraron servidores NavTech. Por favor agregue un servidor para hacer pagos privados"
+
+msgid "Invalid NavTech Server"
+msgstr "Servidor NavTech inválido"
+
+msgid "Add"
+msgstr "Añadir"
+
