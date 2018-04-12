@@ -1610,7 +1610,7 @@ msgid "No Wallet"
 msgstr "没钱包"
 
 #: www/views/onboarding/backupRequest.html:5
-msgid "No backup, no Nav Coin."
+msgid "No backup, no NavCoin."
 msgstr "没有备份，没有比特币。"
 
 #: www/views/addressbook.html:19
@@ -2108,7 +2108,7 @@ msgid "Request Specific amount"
 msgstr "请求特定量"
 
 #: www/views/preferences.html:47
-msgid "Request Spending Password"
+msgid "Set Spending Password"
 msgstr "请求支付密码"
 
 #: www/views/tab-create-shared.html:42
@@ -3109,8 +3109,7 @@ msgstr ""
 msgid "Your Nav Coin wallet is backed up!"
 msgstr "你的比特币钱包被备份 ！"
 
-#: www/views/tab-home.html:36
-msgid "Your Nav Coin wallet is ready!"
+msgid "Your NavCoin wallet is ready!"
 msgstr "你的比特币钱包是准备好了 ！"
 
 #: www/views/feedback/send.html:42

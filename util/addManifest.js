@@ -21,7 +21,7 @@ try {
   const changes = replace.sync({
     files: './dist/www/cache.manifest',
     from: /(# Start Version -).+(- EndV)/g,
-    to: '# Start Version - ' + Math.random() + ' - EndV',
+    to: '# Start Version - ' + Date.now() + ' - EndV',
   });
   console.log('Modified files:', changes.join(', '));
 }

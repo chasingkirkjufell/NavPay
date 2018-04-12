@@ -1612,7 +1612,7 @@ msgid "No Wallet"
 msgstr "ウォレットが無いよ…(´・ω・`)"
 
 #: www/views/onboarding/backupRequest.html:5
-msgid "No backup, no Nav Coin."
+msgid "No backup, no NavCoin."
 msgstr "バックアップは非常に重要です！"
 
 #: www/views/addressbook.html:19
@@ -2110,7 +2110,7 @@ msgid "Request Specific amount"
 msgstr "指定金額を要求"
 
 #: www/views/preferences.html:47
-msgid "Request Spending Password"
+msgid "Set Spending Password"
 msgstr "送金時のパスワード入力"
 
 #: www/views/tab-create-shared.html:42
@@ -3115,8 +3115,7 @@ msgstr "NavPayカードの準備が整いました。入金して全世界のお
 msgid "Your Nav Coin wallet is backed up!"
 msgstr "ナブコインウォレットがバックアップされました!"
 
-#: www/views/tab-home.html:36
-msgid "Your Nav Coin wallet is ready!"
+msgid "Your NavCoin wallet is ready!"
 msgstr "ナブコインウォレットが完成しました!"
 
 #: www/views/feedback/send.html:42

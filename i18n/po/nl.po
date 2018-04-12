@@ -1509,7 +1509,7 @@ msgid "No Wallet"
 msgstr "Geen portefeuille"
 
 #: www/views/onboarding/backupRequest.html:5
-msgid "No backup, no Nav Coin."
+msgid "No backup, no NavCoin."
 msgstr "Geen back-up, geen Nav Coin."
 
 #: www/views/addressbook.html:19
@@ -1996,7 +1996,7 @@ msgid "Request Specific amount"
 msgstr "Vraag specifiek bedrag"
 
 #: www/views/preferences.html:47
-msgid "Request Spending Password"
+msgid "Set Spending Password"
 msgstr "Vraag bestedingwachtwoord"
 
 #: www/views/tab-create-shared.html:42
@@ -2951,9 +2951,8 @@ msgstr "U ontvangt e-mail meldingen over verzonden en ontvangen betalingen van u
 msgid "Your Nav Coin wallet is backed up!"
 msgstr " Er is een back-up gemaakt van uw Nav Coin portefeuille!"
 
-#: www/views/tab-home.html:35
-msgid "Your Nav Coin wallet is ready!"
-msgstr "Uw Nav Coin portefeuille is gereed!"
+msgid "Your NavCoin wallet is ready!"
+msgstr "Uw NavCoin portefeuille is gereed!"
 
 #: www/views/feedback/send.html:42
 msgid "Your ideas, feedback, or comments"
