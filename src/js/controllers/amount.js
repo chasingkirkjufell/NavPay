@@ -89,9 +89,9 @@ angular.module('copayApp.controllers').controller('amountController', function($
 
     processAmount();
 
-    $scope.wallets = profileService.getWallets();
-    var selectedWallet = checkSelectedWallet($scope.wallet, $scope.wallets);
-    $scope.onWalletSelect(selectedWallet);
+    $scope.wallets = profileService.getWallets().sort(function(a, b){ return a.status.totalBalanceStr - b.status.totalBalanceStr });
+    $scope.visibleWallet = $scope.wallets[0]
+    $scope.visibleWalletIndex = 0
 
     $timeout(function() {
       $ionicScrollDelegate.resize();
@@ -255,17 +255,28 @@ angular.module('copayApp.controllers').controller('amountController', function($
     $scope.useSendMax = null;
   };
 
-  var checkSelectedWallet = function(wallet, wallets) {
-    if (!wallet) return wallets[0];
-    var w = lodash.find(wallets, function(w) {
-      return w.id == wallet.id;
-    });
-    if (!w) return wallets[0];
-    return wallet;
+  $scope.nextWallet =  function() {
+    console.log($scope.visibleWalletIndex + 1, $scope.wallets.length, $scope.visibleWalletIndex + 1 === $scope.wallets.length)
+    if($scope.visibleWalletIndex + 1 === $scope.wallets.length) {
+      // No next wallet, reset
+      $scope.visibleWalletIndex = 0;
+      $scope.visibleWallet = $scope.wallets[0];
+    } else {
+      $scope.visibleWalletIndex++;
+      $scope.visibleWallet = $scope.wallets[$scope.visibleWalletIndex];
+    }
   }
 
-  $scope.onWalletSelect = function(wallet) {
-    $scope.wallet = wallet;
-    $scope.setAddress();
-  };
+  $scope.previousWallet =  function() {
+    if($scope.visibleWalletIndex === 0) {
+      // No previous wallet, go to end
+      $scope.visibleWalletIndex = $scope.wallets.length - 1;
+      $scope.visibleWallet = $scope.wallets[$scope.visibleWalletIndex];
+    } else {
+      $scope.visibleWalletIndex--;
+      $scope.visibleWallet = $scope.wallets[$scope.visibleWalletIndex];
+    }
+  }
+
+
 });

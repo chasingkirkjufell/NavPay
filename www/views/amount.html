@@ -35,21 +35,24 @@
         <span class="m10l">{{toName || toAddress}}</span>
       </div>
     </div>
-    <div>
-    <div class="item item-no-bottom-border recipient-label" translate>Current Wallet</div>
-    <div class="item item-text-wrap item-icon-left bitcoin-address">
+    <div class="item item-no-bottom-border recipient-label" translate>Wallet balances</div>
+    <div class="item item-text-wrap item-icon-left bitcoin-address bitcoin-balance">
         <i class="icon big-icon-svg">
           <img src="img/app/icon.png" ng-class="{'wallet-background-color-default': !toColor}" class="bg"/>
         </i>
         <span class="m10l">
-          {{wallet.name || wallet.id}}:     
-          {{wallet.status.totalBalanceStr ? wallet.status.totalBalanceStr : ( wallet.cachedBalance ? wallet.cachedBalance + (wallet.cachedBalanceUpdatedOn ? ' &middot; ' + ( wallet.cachedBalanceUpdatedOn  * 1000 | amTimeAgo) : '') : ''  ) }}
-        </span> 
+          {{visibleWallet.name || visibleWallet.id}}:
+          {{visibleWallet.status.totalBalanceStr}}
+        </span>
+      <span class="amount__wallet-arrows" ng-hide="wallets.length === 1">
+        <span ng-click="previousWallet()" class="arrow">◀&#xFE0E;</span>
+        <span ng-click="nextWallet()" class="arrow">▶&#xFE0E;</span>
+      </span>
       </div>
     </div>
     <div ng-class="{'amount-pane-recipient': !customAmount && !nextStep,
       'amount-pane-no-recipient': customAmount || nextStep}">
-      
+
       <div class="amount-bar oh">
         <div class="title">
           <span translate>Amount</span>
