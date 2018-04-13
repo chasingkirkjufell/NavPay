@@ -19,7 +19,7 @@
         <div class="ng-hide zero-state-tldr" ng-show="currentState === scannerStates.denied" translate>Enable camera access in your device settings to get started.</div>
         <div class="ng-hide zero-state-tldr" ng-show="currentState === scannerStates.unavailable" translate>Please connect a camera to get started.</div>
         <div class="ng-show zero-state-tldr" ng-show="!cameraSupported" translate>Camera is not supported on this device.</div>
-        <div class="ng-show zero-state-tldr" ng-show="webRtcDenied" translate>You have disallowed camera use. It must be enabled to scan QR codes.</div>
+        <div class="ng-show zero-state-tldr" ng-show="webRtcDenied" translate>You have disallowed camera use. It must be enabled to scan QR codes. <br /> <br />Please see the <a href="https://info.navcoin.org/knowledge-base/navpay-qr-scanner/" style="color: white;">NavCoin guide</a> for more information.</div>
         <div class="ng-show zero-state-tldr" ng-show="cameraSupported && !webRtcDenied" translate>Attempting to load the camera, please wait.</div>
         <button ng-show="currentState === scannerStates.unauthorized" class="ng-hide button button-standard button-primary" ng-click="authorize()" translate>Allow Camera Access</button>
         <button ng-show="currentState === scannerStates.denied && canOpenSettings" class="ng-hide button button-standard button-primary" ng-click="openSettings()" translate>Open Settings</button>
