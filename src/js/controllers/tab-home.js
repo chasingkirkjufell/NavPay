@@ -13,6 +13,8 @@ angular.module('copayApp.controllers').controller('tabHomeController',
     $scope.buyNavTip = true
     $scope.isCordova = platformInfo.isCordova;
     $scope.isAndroid = platformInfo.isAndroid;
+    $scope.isMobile = platformInfo.isMobile;
+    $scope.isIOSNativeApp = platformInfo.isCordova && platformInfo.isIOS
     $scope.isWindowsPhoneApp = platformInfo.isCordova && platformInfo.isWP;
     $scope.isNW = platformInfo.isNW;
     $scope.showRateCard = {};
@@ -306,5 +308,15 @@ angular.module('copayApp.controllers').controller('tabHomeController',
         $scope.$broadcast('scroll.refreshComplete');
       }, 300);
       updateAllWallets();
+    };
+
+    $scope.openChangellyWeb = function() {
+      var url = 'https://changelly.com/exchange/USD/NAV/100?ref_id=6c2996558a71';
+      var optIn = true;
+      var title = null;
+      var message = gettextCatalog.getString('Visit Changelly.com');
+      var okText = gettextCatalog.getString('Open Website');
+      var cancelText = gettextCatalog.getString('Go Back');
+      externalLinkService.open(url, optIn, title, message, okText, cancelText);
     };
   });

@@ -73,7 +73,7 @@
       </div>
     </div>
 
-    <div ng-if="!checkingBalance && !isSweeping && (!hasFunds || !hasWallets)">
+    <div ng-if="!checkingBalance && !isSweeping && (!hasFunds || !hasWallets)"> 
       <div class="list card sendTip">
         <div class="item item-icon-right item-heading"></div>
         <div>
@@ -85,12 +85,16 @@
           Start sending NavCoin
         </div>
         <div class="subtitle">
-          <span ng-show="hasWallets" translate>To get started, buy NavCoin or share your address. You can receive NavCoin from any wallet or service.</span>
-          <span ng-show="!hasWallets" translate>To get started, you'll need to create a NavCoin wallet and get some NavCoin.</span>
-          <div class="padding">
-            <a class="button button-standard button-primary" ng-show="hasWallets" ng-click="openBuyLink()" translate>Buy NavCoin</a>
-            <button class="button button-standard button-primary" ng-click="createWallet()" ng-show="!hasWallets" translate>Create NavCoin wallet</button>
-            <button class="button button-standard button-secondary" ui-sref="tabs.receive" ng-show="hasWallets" translate>Show NavCoin address</button>
+            <div ng-show="wallets[0]" translate>To get started, you can buy NavCoin through our exchange partner Changelly.</div>
+            <div ng-show="wallets[0]" translate>Otherwise you can receive NavCoin with one of your addresses.</div>
+            <div ng-show="!wallets[0]" translate>To get started, you'll need to create a NavCoin wallet and get some NavCoin.</div>
+
+            <div translate class="padding text-bold">Buy NavCoin with:</div>
+            <div class="padding">
+              <a class="button button-standard button-primary" ng-show="wallets[0]" ng-click="openChangellyWeb()" translate>Credit Card</a>
+              <a class="button button-standard button-primary" ng-show="wallets[0]" ng-click="openBuyLink()" translate>Cryptocurrency</a>
+              <button class="button button-standard button-primary" ng-click="createWallet()" ng-show="!hasWallets" translate>Create NavCoin wallet</button>
+              <button class="button button-standard button-secondary" ui-sref="tabs.receive" ng-show="hasWallets" translate>Show NavCoin address</button>
           </div>
         </div>
       </div>
