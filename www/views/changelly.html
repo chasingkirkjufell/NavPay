@@ -16,7 +16,7 @@
     <div class="list card padding text-center" ng-if="!wallets[0]">
       <span translate>No Wallet</span>
     </div>
-    
+
     <div class="address list card text-center" ng-if="wallets[0]">
       <div class="backup" ng-if="wallets[0] && wallet && wallet.isComplete() && wallet.needsBackup" ng-click="openBackupNeededModal()">
         <i class="icon ion-alert"></i>
@@ -45,7 +45,7 @@
         <div>
           <button ng-show="addr" class="button-address" ng-click="setAddress(true)">
             <span translate>Generate new address from wallet: <span class="wallet-name">{{wallet.name || wallet.id}}</span></span>
-          </button> 
+          </button>
           <br>
           <button ng-if="wallets.length > 1" class="button-address" ng-click="showWalletSelector()">
             <span translate>Select a different wallet</span>
@@ -53,14 +53,15 @@
         </div>
       </div>
     </div>
-    
-    <div class="list card">
-      <div class="mobile-only" class="text-center" ng-if="isIOS || isAndroid">
+
+    <div class="list card mobile-only text-center" ng-if="isIOS || isAndroid">
         <div class="text">* Credit Card purchase not available on your device</div>
         <div class="link">
-          <a class="button button-standard button-primary" ng-show="wallets[0]" ng-click="openExternalLink('https://changelly.com/widget/v1?auth=email&from=USD&to=NAV&merchant_id=fa6a4eb25086&address=&amount=100&ref_id=6c2996558a71&color=7d59b5')" translate>Buy NAV with Credit Card</a>
+          <a class="button button-standard button-primary" ng-show="wallets[0]" ng-click="openExternalLink('https://changelly.com/exchange/USD/NAV/100?ref_id=6c2996558a71')" translate>Buy NAV with Credit Card</a>
         </div>
-      </div>
+    </div>
+
+    <div class="list card">
       <div id="changelly-constrainer">
         <div id="changelly-loader" translate>Loading Changelly Exchange...</div>
         <div id="changelly-container">
@@ -69,6 +70,7 @@
         </div>
       </div>
     </div>
+
   </ion-content>
   <wallet-selector
   wallet-selector-title="walletSelectorTitle"
