@@ -208,11 +208,10 @@ angular.module('copayApp.controllers').controller('tabScanController', function(
     scannerService.pausePreview();
     if ($scope.usingWebRtc) { stopWebRtcCamera() }
 
-    var trimmedContents = contents.replace('navcoin:', '');
     if ($scope.returnRoute) {
-      $state.go($scope.returnRoute, { address: trimmedContents });
+      $state.go($scope.returnRoute, { address: contents });
     } else {
-      incomingData.redir(trimmedContents);
+      incomingData.redir(contents);
     }
   }
 
@@ -273,14 +272,13 @@ angular.module('copayApp.controllers').controller('tabScanController', function(
       ctx.drawImage(video, 0, 0, width, height);
 
       // Get the image data, and run it through jsQR
-      var imageData = ctx.getImageData(0, 0, width, height);
+      var imageData = ctx.getImageData(0, 0, width, height)
       var scanResults = jsQR(imageData.data, width, height)
 
-      $log.debug('QR Code', scanResults)
-      if (scanResults && scanResults.data.includes('navcoin')) {
+      if (scanResults && scanResults.data) {
+        $log.debug('QR Code', scanResults)
         handleSuccessfulScan(scanResults.data);
       }
-
     })
   }
 
@@ -318,7 +316,7 @@ angular.module('copayApp.controllers').controller('tabScanController', function(
         var scanResults = jsQR(imageData.data, image.width, image.height)
 
         $log.debug('QR Code', scanResults)
-        if (scanResults && scanResults.data.includes('navcoin')) {
+        if (scanResults) {
           handleSuccessfulScan(scanResults.data);
         } else {
           // Ask user to try again
