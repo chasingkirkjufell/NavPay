@@ -5,6 +5,7 @@ angular.module('copayApp.controllers').controller('changellyController',
     ongoingProcess, externalLinkService, latestReleaseService, profileService, walletService, configService, $log, platformInfo, storageService,
     txpModalService, appConfigService, startupService, addressbookService, feedbackService, bwcError, nextStepsService, buyAndSellService,
     homeIntegrationsService, bitpayCardService, pushNotificationsService, timeService) {
+
     var wallet;
     var listeners = [];
     var notifications = [];
@@ -173,7 +174,6 @@ angular.module('copayApp.controllers').controller('changellyController',
       return wallet;
     }
 
-
     $scope.openExternalLink = function(url) {
       var optIn = true;
       var title = null;
@@ -186,5 +186,11 @@ angular.module('copayApp.controllers').controller('changellyController',
     $scope.onWalletSelect = function(wallet) {
       $scope.wallet = wallet;
       $scope.setAddress();
+    };
+
+    $scope.showWalletSelector = function() {
+      if ($scope.singleWallet) return;
+      $scope.walletSelectorTitle = gettextCatalog.getString('Select a wallet');
+      $scope.showWallets = true;
     };
   });

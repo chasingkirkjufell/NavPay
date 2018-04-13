@@ -35,7 +35,21 @@
         <span class="m10l">{{toName || toAddress}}</span>
       </div>
     </div>
-
+    <div class="item item-no-bottom-border recipient-label" translate>Wallet balances</div>
+    <div class="item item-text-wrap item-icon-left bitcoin-address bitcoin-balance">
+        <i class="icon big-icon-svg">
+          <img src="img/app/icon.png" ng-class="{'wallet-background-color-default': !toColor}" class="bg"/>
+        </i>
+        <span class="m10l">
+          {{visibleWallet.name || visibleWallet.id}}:
+          {{visibleWallet.status.totalBalanceStr}}
+        </span>
+      <span class="amount__wallet-arrows" ng-hide="wallets.length === 1">
+        <span ng-click="previousWallet()" class="arrow">◀&#xFE0E;</span>
+        <span ng-click="nextWallet()" class="arrow">▶&#xFE0E;</span>
+      </span>
+      </div>
+    </div>
     <div ng-class="{'amount-pane-recipient': !customAmount && !nextStep,
       'amount-pane-no-recipient': customAmount || nextStep}">
 
@@ -44,7 +58,6 @@
           <span translate>Amount</span>
         </div>
       </div>
-
       <div class="amount">
         <div class="amount__editable" ng-class="{'amount__editable--minimize': smallFont, 'amount__editable--standard': !smallFont, 'amount__editable--placeholder': !amount}">
           <span class="amount__number">{{amount || "0.00" }}</span>
