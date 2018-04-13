@@ -14,6 +14,11 @@
   <div class="bp-content" ng-class="{'status-bar': isCordova}">
 
   <div class="amount-wrapper" ng-show="wallet && wallet.isComplete() && amountIsCollapsible" ng-class="{'wallet-background-color-default': !wallet.color}" ng-style="{'background-color':wallet.color}">
+    <ion-refresher
+      pulling-icon="ion-ios-refresh"
+      spinner="ios-small"
+      on-refresh="onRefresh()">
+    </ion-refresher>
     <div
       class="amount-bg"
       ng-style="{'background-color':wallet.color}"
@@ -70,12 +75,14 @@
             </strong>
             &nbsp;
             <span>
-              {{status.spendableBalanceAlternative}} {{status.alternativeIsoCode}}
+             {{status.spendableBalanceAlternative}} {{status.alternativeIsoCode}}
             </span>
           </button>
         </div>
-
       </div>
+      <span class="amount__refresh {{updatingStatus ? 'amount__refresh-rotate' : ''}}" ng-click="onRefresh()">
+        ↻
+      </span>
       <div ng-if="updatingStatus" class="amount__updating">
         <div class="size-36">
           <strong>...</strong>
@@ -89,7 +96,6 @@
 
   <ion-content ng-style="{'margin-top': contentMargin}" ng-class="{collapsible: amountIsCollapsible}">
     <ion-refresher
-      ng-if="isAndroid"
       pulling-icon="ion-ios-refresh"
       spinner="ios-small"
       on-refresh="onRefresh()">
