@@ -3262,8 +3262,8 @@ msgstr "Mostrar código QR"
 msgid "Anyone with your backup phrase can access or spend your NavCoin."
 msgstr "Cualquiera con su frase de respaldo puede acceder o gastar nuestro NavCoin."
 
-msgid "Buy Nav"
-msgstr "Compra Nav"
+msgid "Buy NAV"
+msgstr "Compra NAV"
 
 msgid "Wallet not encrypted. Set spending password to encrypt."
 msgstr "Monedero no encriptado Configure el gasto de contraseña para encriptar."
