@@ -10,6 +10,10 @@ angular.module('copayApp.controllers').controller('tabSendController', function(
   $scope.isSweeping = false;
   $scope.isChromeApp = platformInfo.isChromeApp;
   $scope.isIOS = platformInfo.isIOS;
+  $scope.isCordova = platformInfo.isCordova;
+  $scope.isAndroid = platformInfo.isAndroid;
+  $scope.isMobile = platformInfo.isMobile;
+  $scope.isIOSNativeApp = platformInfo.isCordova && platformInfo.isIOS;
   $scope.privatePayment = false;
   $scope.privateToggleOn = false;
   $scope.navTechError = false;

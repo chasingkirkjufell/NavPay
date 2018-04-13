@@ -3319,3 +3319,34 @@ msgstr "Servidor NavTech inválido"
 msgid "Add"
 msgstr "Añadir"
 
+msgid "You have disallowed camera use. It must be enabled to scan QR codes."
+msgstr "Has rechazado el uso de la cámara. Debe estar habilitado para escanear códigos QR."
+
+msgid "Please see the <a href="https://info.navcoin.org/knowledge-base/navpay-qr-scanner/" style="color: white;">NavCoin guide</a> for more information."
+msgstr "arrendamiento, consulte la <a href="https://info.navcoin.org/knowledge-base/navpay-qr-scanner/" style="color: white;">guía de NavCoin</a> para obtener más información."
+
+msgid "Purchase NavCoin"
+msgstr "Compra NavCoin"
+
+msgid "To get started, you can buy NavCoin through our exchange partner Changelly."
+msgstr "Para comenzar, puede comprar NavCoin a través de nuestro socio de intercambio Changelly."
+
+msgid "To get started, you'll need to create a NavCoin wallet and get some NavCoin."
+msgstr "Para comenzar, deberá crear una billetera NavCoin y obtener un poco de NavCoin."
+
+msgid "Buy NavCoin with:"
+msgstr "Compre NavCoin con:"
+
+msgid "Credit Card"
+msgstr "Tarjeta de crédito"
+
+msgid "Cryptocurrency"
+msgstr "Criptomoneda"
+
+msgid "Create NavCoin wallet"
+msgstr "Crear una billetera NavCoin"
+
+msgid "Show NavCoin address"
+msgstr "Mostrar la dirección NavCoin"
+
+
