@@ -3252,106 +3252,91 @@ msgid "Next"
 msgstr "次へ"
 
 msgid "NavTech / Private Payment Servers"
-msgstr ""
+msgstr "NavTech/プライベートペイメントサーバー"
 
 msgid "Encryption required"
-msgstr ""
+msgstr "暗号化が必要です"
 
 msgid "Backup required"
-msgstr ""
+msgstr "バックアップが必要です"
 
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "クリップボードにコピー"
 
 msgid "Show QR Code"
-msgstr ""
+msgstr "QRコードを表示する"
 
 msgid "Anyone with your backup phrase can access or spend your NavCoin."
-msgstr ""
+msgstr "あなたのバックアップフレーズを持っている人なら誰でもあなたのNavCoinにアクセスすることができます。"
 
 msgid "Buy NAV"
-msgstr ""
+msgstr "NAVを購入"
 
 msgid "Wallet not encrypted. Set spending password to encrypt."
-msgstr ""
-
-msgid "Cancel"
-msgstr ""
-
-msgid "OK"
-msgstr ""
+msgstr "ウォレットの暗号化されていません。暗号化するには、送金時のパスワードをセットします。"
 
 msgid "Please enter a password to encrypt your wallet"
-msgstr ""
+msgstr "ウォレットを暗号化するためのパスワードを入力してください"
 
 msgid "This password can never be recovered or reset!"
-msgstr ""
+msgstr "このパスワードはリカバリーやリセットはできなくなります！"
 
 msgid "Are you sure?"
 msgstr ""
 
 msgid "Your wallet keys will be stored in plain text and you will be vulnerable to having you coins stolen. We highly recommend pressing no and choosing a password."
-msgstr ""
+msgstr "あなたのウォレットの鍵は簡単なので、このまま保存すると盗難にあいやすくなります。いいえを押してパスワードを変更することを強くお勧めします。"
 
 msgid "Create password"
-msgstr ""
+msgstr "パスワードの作成"
 
 msgid "No password"
-msgstr ""
+msgstr "パスワードなし"
 
 msgid "NavCoin is different &ndash; it cannot be safely held with a bank or web service."
-msgstr ""
+msgstr "NavCoinは異なっています。 銀行やウェブサービスで安全に保持することはできません。"
 
 msgid "No NavTech servers found. Please add a NavTech server to make private payments."
-msgstr ""
+msgstr "NavTechサーバーが見つかりませんでした。プライベートペイメントを行うにはNavTechサーバーを追加してください。"
 
 msgid "Invalid server"
-msgstr ""
+msgstr "無効なサーバーです"
 
 msgid "NavTech Server successfully added"
-msgstr ""
+msgstr "NavTech Serverが正常に追加されました"
 
 msgid "Please enter a NavTech URL. e.g. https://SomeNavTechServer.com:3000"
-msgstr ""
+msgstr "NavTechのURLを入力してください。例えばhttps://SomeNavTechServer.com:3000"
 
 msgid "Add a NavTech server to create private payments."
-msgstr ""
+msgstr "プライベートペイメントを作成するNavTechサーバーを追加します。"
 
 msgid "No NavTech servers found. Please add a server to make private payments"
-msgstr ""
+msgstr "NavTechサーバーが見つかりませんでした。プライベートな支払いを行うためにはサーバーを追加してください"
 
 msgid "Invalid NavTech Server"
-msgstr ""
+msgstr "無効なNavTechサーバーです"
 
 msgid "Add"
-msgstr ""
+msgstr "追加する"
 
 msgid "You have disallowed camera use. It must be enabled to scan QR codes."
-msgstr ""
+msgstr "あなたはカメラの使用を許可していません。 QRコードをスキャンするには有効にする必要があります。"
 
 msgid "Please see the NavCoin guide for more information."
-msgstr ""
+msgstr "詳細については、NavCoinガイドを参照してください。"
 
 msgid "Purchase NavCoin"
-msgstr ""
+msgstr "NavCoinを購入する"
 
 msgid "To get started, you can buy NavCoin through our exchange partner Changelly."
-msgstr ""
-
-msgid "To get started, you'll need to create a NavCoin wallet and get some NavCoin."
-msgstr ""
+msgstr "はじめに、パートナーのChangelly交換所からNavCoinを購入することができます。"
 
 msgid "Buy NavCoin with:"
-msgstr ""
+msgstr "NavCoinを購入する"
 
 msgid "Credit Card"
-msgstr ""
+msgstr "クレジットカード"
 
 msgid "Cryptocurrency"
-msgstr ""
-
-msgid "Create NavCoin wallet"
-msgstr ""
-
-msgid "Show NavCoin address"
-msgstr ""
+msgstr "仮想通貨"
