@@ -3252,28 +3252,28 @@ msgid "Encryption required"
 msgstr ""
 
 msgid "Backup required"
-msgstr ""
+msgstr "è richiesto il backup"
 
 msgid "Copy to clipboard"
 msgstr ""
 
 msgid "Show QR Code"
-msgstr ""
+msgstr "Mostra il Codice QR"
 
 msgid "Anyone with your backup phrase can access or spend your NavCoin."
-msgstr ""
+msgstr "Qualcuno che abbia la tua frase di backup può accedere o spendere i tuoi NavCoin."
 
 msgid "Buy NAV"
-msgstr ""
+msgstr "Compra NAV"
 
 msgid "Wallet not encrypted. Set spending password to encrypt."
 msgstr ""
 
 msgid "Please enter a password to encrypt your wallet"
-msgstr ""
+msgstr "Per favore inserire una password per crittografare il tuo portafoglio"
 
 msgid "This password can never be recovered or reset!"
-msgstr ""
+msgstr "Questa password non potrà mai essere recuperata o resettata!"
 
 msgid "Are you sure?"
 msgstr ""
@@ -3282,7 +3282,7 @@ msgid "Your wallet keys will be stored in plain text and you will be vulnerable 
 msgstr ""
 
 msgid "Create password"
-msgstr ""
+msgstr "Crea Password"
 
 msgid "No password"
 msgstr ""
