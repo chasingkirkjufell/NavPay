@@ -3102,91 +3102,91 @@ msgid "Next"
 msgstr "Volgende"
 
 msgid "NavTech / Private Payment Servers"
-msgstr ""
+msgstr "NavTech / Privé Betaalservers"
 
 msgid "Encryption required"
-msgstr ""
+msgstr "Versleuteling verplicht"
 
 msgid "Backup required"
-msgstr ""
+msgstr "Back-up verplicht"
 
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Kopieer naar klembord"
 
 msgid "Show QR Code"
-msgstr ""
+msgstr "Laat de QR Code zien"
 
 msgid "Anyone with your backup phrase can access or spend your NavCoin."
-msgstr ""
+msgstr "Iedereen met uw back-up zin kan toegang krijgen tot uw NavCoin of ze uitgeven."
 
 msgid "Buy NAV"
-msgstr ""
+msgstr "Koop NAV"
 
 msgid "Wallet not encrypted. Set spending password to encrypt."
-msgstr ""
+msgstr "Portemonnee niet versleuteld. Stel een wachtwoord in voor de versleuteling."
 
 msgid "Please enter a password to encrypt your wallet"
-msgstr ""
+msgstr "Stel een wachtwoord in voor de versleuteling."
 
 msgid "This password can never be recovered or reset!"
-msgstr ""
+msgstr "Dit wachtwoord kan nooit hersteld worden of gereset!"
 
 msgid "Are you sure?"
-msgstr ""
+msgstr "Weet u het zeker?"
 
 msgid "Your wallet keys will be stored in plain text and you will be vulnerable to having you coins stolen. We highly recommend pressing no and choosing a password."
-msgstr ""
+msgstr "Uw portemonnee sleutels zullen opgeslagen worden als platte tekst en hierdoor bestaat de kans dat uw munten worden gestolen. We raden het ten zeerste aan om op nee te drukken en een wachtwoord te kiezen"
 
 msgid "Create password"
-msgstr ""
+msgstr "Creëer wachtwoord"
 
 msgid "No password"
-msgstr ""
+msgstr "Geen wachtwoord"
 
 msgid "NavCoin is different &ndash; it cannot be safely held with a bank or web service."
-msgstr ""
+msgstr "NavCoin is anders &ndash; en kan niet veilig worden opgeslagen bij een bank of webservice."
 
 msgid "No NavTech servers found. Please add a NavTech server to make private payments."
-msgstr ""
+msgstr "Geen NavTech servers gevonden. Voeg een NavTech server toe om privébetalingen te doen."
 
 msgid "Invalid server"
-msgstr ""
+msgstr "Ongeldige server"
 
 msgid "NavTech Server successfully added"
-msgstr ""
+msgstr "NavTech servers succesvol toegevoegd."
 
 msgid "Please enter a NavTech URL. e.g. https://SomeNavTechServer.com:3000"
-msgstr ""
+msgstr "Voer een NavTech URL in bijv. https://SomeNavTechServer.com:3000"
 
 msgid "Add a NavTech server to create private payments."
-msgstr ""
+msgstr "Voeg een NavTech server toe om privébetalingen te creëren."
 
 msgid "No NavTech servers found. Please add a server to make private payments"
-msgstr ""
+msgstr "Geen NavTech servers gevonden. Voeg een server toe om privébetalingen te doen."
 
 msgid "Invalid NavTech Server"
-msgstr ""
+msgstr "Ongeldige NavTech Server"
 
 msgid "Add"
-msgstr ""
+msgstr "Toevoegen"
 
 msgid "You have disallowed camera use. It must be enabled to scan QR codes."
-msgstr ""
+msgstr "U heeft camera gebruik niet toegestaan. Deze moet ingeschakeld zijn om QR-codes te scannen."
 
 msgid "Please see the NavCoin guide for more information."
-msgstr ""
+msgstr "Zie de NavCoin gids voor meer informatie."
 
 msgid "Purchase NavCoin"
-msgstr ""
+msgstr "Koop NavCoin"
 
 msgid "To get started, you can buy NavCoin through our exchange partner Changelly."
-msgstr ""
+msgstr "Om te starten kunt u NavCoin kopen via onze wissel partner Changelly."
 
 msgid "Buy NavCoin with:"
-msgstr ""
+msgstr "Om te starten dient u een NavCoin portemonnee aan te maken en wat NavCoin hieraan toe te voegen."
 
 msgid "Credit Card"
-msgstr ""
+msgstr "Koop NavCoin met:"
 
 msgid "Cryptocurrency"
-msgstr ""
+msgstr "Creditcard"
