@@ -3298,3 +3298,108 @@ msgstr "Загрузка Биржи Changelly..."
 #: tab-send.html:24
 msgid "Next"
 msgstr "Следующая"
+
+msgid "NavTech / Private Payment Servers"
+msgstr "NavTech / Серверы приватных платежей"
+
+msgid "Encryption required"
+msgstr "Шифрование необходимо"
+
+msgid "Backup required"
+msgstr "Необходимо резервное копирование"
+
+msgid "Copy to clipboard"
+msgstr "Копировать в буфер обмена"
+
+msgid "Show QR Code"
+msgstr "Показать QR-код"
+
+msgid "Anyone with your backup phrase can access or spend your NavCoin."
+msgstr "Любой с Вашей фразой восстановления может получить доступ или потратить Ваши NavCoin"
+
+msgid "Buy NAV"
+msgstr "Купить NAV"
+
+msgid "Wallet not encrypted. Set spending password to encrypt."
+msgstr "Кошелёк не зашифрован. Установите пароль, чтобы зашифровать."
+
+msgid "Cancel"
+msgstr "Отменить"
+
+msgid "OK"
+msgstr "Хорошо"
+
+msgid "Please enter a password to encrypt your wallet"
+msgstr "Ведите пароль, чтобы зашифровать Ваш кошелёк"
+
+msgid "This password can never be recovered or reset!"
+msgstr "Этот пароль уже никогда не будет восстановлен или запущен повторно!"
+
+msgid "Are you sure?"
+msgstr ""
+
+msgid "Your wallet keys will be stored in plain text and you will be vulnerable to having you coins stolen. We highly recommend pressing no and choosing a password."
+msgstr "Ключи к Вашему кошельку будут храниться простым текстом и Вы будете уязвимы к краже коинов. Мы настоятельно рекомендуем нажать нет и выбрать пароль."
+
+msgid "Create password"
+msgstr "Создать пароль"
+
+msgid "No password"
+msgstr "Без пароля"
+
+msgid "NavCoin is different &ndash; it cannot be safely held with a bank or web service."
+msgstr "NavCoin другой &ndash; его нельзя безопасно хранить в банке или на веб-сервисе.."
+
+msgid "No NavTech servers found. Please add a NavTech server to make private payments."
+msgstr "Сервера NavTech не обнаружены. Добавьте сервер NavTech для приватных платежей."
+
+msgid "Invalid server"
+msgstr "Неверный сервер"
+
+msgid "NavTech Server successfully added"
+msgstr "Сервер NavTech успешно добавлен"
+
+msgid "Please enter a NavTech URL. e.g. https://SomeNavTechServer.com:3000"
+msgstr "Введите URL сервера NavTech, например https://SomeNavTechServer.com:3000"
+
+msgid "Add a NavTech server to create private payments."
+msgstr "Добавить сервер NavTech для создания приватных платежей."
+
+msgid "No NavTech servers found. Please add a server to make private payments"
+msgstr "Сервера NavTech не обнаружены. Добавьте сервер для приватных платежей."
+
+msgid "Invalid NavTech Server"
+msgstr "Неверный Сервер NavTech"
+
+msgid "Add"
+msgstr ""
+
+msgid "You have disallowed camera use. It must be enabled to scan QR codes."
+msgstr "Вы запретили использование камеры. Оно должно быть активировано для сканирования QR-кода."
+
+msgid "Please see the NavCoin guide for more information."
+msgstr "Пожалуйста, посмотрите руководство NavCoin, чтобы получить больше информации."
+
+msgid "Purchase NavCoin"
+msgstr "Приобрести NavCoin"
+
+msgid "To get started, you can buy NavCoin through our exchange partner Changelly."
+msgstr "Чтобы начать, Вы можете приобрести NavCoin через нашего партнёра – биржу Changelly."
+
+msgid "To get started, you'll need to create a NavCoin wallet and get some NavCoin."
+msgstr "Чтобы начать, нужно создать кошелёк NavCoin и получить NavCoin."
+
+msgid "Buy NavCoin with:"
+msgstr "Приобрести NavCoin, используя:"
+
+msgid "Credit Card"
+msgstr "Кредитную Карту"
+
+msgid "Cryptocurrency"
+msgstr "Криптовалюту"
+
+msgid "Create NavCoin wallet"
+msgstr "Создать кошелёк NavCoin"
+
+msgid "Show NavCoin address"
+msgstr "Показать адрес NavCoin"
