@@ -3125,12 +3125,6 @@ msgstr ""
 msgid "Wallet not encrypted. Set spending password to encrypt."
 msgstr ""
 
-msgid "Cancel"
-msgstr ""
-
-msgid "OK"
-msgstr ""
-
 msgid "Please enter a password to encrypt your wallet"
 msgstr ""
 
@@ -3188,9 +3182,6 @@ msgstr ""
 msgid "To get started, you can buy NavCoin through our exchange partner Changelly."
 msgstr ""
 
-msgid "To get started, you'll need to create a NavCoin wallet and get some NavCoin."
-msgstr ""
-
 msgid "Buy NavCoin with:"
 msgstr ""
 
@@ -3198,10 +3189,4 @@ msgid "Credit Card"
 msgstr ""
 
 msgid "Cryptocurrency"
-msgstr ""
-
-msgid "Create NavCoin wallet"
-msgstr ""
-
-msgid "Show NavCoin address"
 msgstr ""

@@ -2333,9 +2333,6 @@ msgid "Show advanced options"
 msgstr ""
 
 #: www/views/tab-send.html:37
-msgid "Show NavCoin address"
-msgstr ""
-
 #: www/views/tab-send.html:59
 msgid "Show more"
 msgstr ""
@@ -2619,9 +2616,7 @@ msgstr ""
 msgid "To get started, Buy NavCoin or share your address. You can receive NavCoin from any wallet or service."
 msgstr ""
 
-#: www/views/tab-send.html:33
-msgid "To get started, you'll need to create a NavCoin wallet and get some NavCoin."
-msgstr ""
+#: www/views/tab-send.html:3
 
 #: src/js/services/bitpayAccountService.js:73
 msgid "To {{reason}} you must first add your BitPay account - {{email}}"
@@ -3259,12 +3254,6 @@ msgstr ""
 msgid "Wallet not encrypted. Set spending password to encrypt."
 msgstr ""
 
-msgid "Cancel"
-msgstr ""
-
-msgid "OK"
-msgstr ""
-
 msgid "Please enter a password to encrypt your wallet"
 msgstr ""
 
@@ -3322,9 +3311,6 @@ msgstr ""
 msgid "To get started, you can buy NavCoin through our exchange partner Changelly."
 msgstr ""
 
-msgid "To get started, you'll need to create a NavCoin wallet and get some NavCoin."
-msgstr ""
-
 msgid "Buy NavCoin with:"
 msgstr ""
 
@@ -3332,10 +3318,4 @@ msgid "Credit Card"
 msgstr ""
 
 msgid "Cryptocurrency"
-msgstr ""
-
-msgid "Create NavCoin wallet"
-msgstr ""
-
-msgid "Show NavCoin address"
 msgstr ""
