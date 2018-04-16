@@ -3275,7 +3275,7 @@ msgid "This password can never be recovered or reset!"
 msgstr "Dieses Passwort kann weder wiedererlangt noch zurückgesetzt werden."
 
 msgid "Are you sure?"
-msgstr ""
+msgstr "Sind Sie sicher?"
 
 msgid "Your wallet keys will be stored in plain text and you will be vulnerable to having you coins stolen. We highly recommend pressing no and choosing a password."
 msgstr "Ihre Wallet Schlüssel werden im Klartext gespeichert und somit wird Angreifern erleichtert Ihre Coins zu stehlen. Wir emphelen daher sehr auf "Nein" zu drückenund ein Passwort festzulegen."
@@ -3311,7 +3311,7 @@ msgid "Invalid NavTech Server"
 msgstr "Ungültiger NavTech Server"
 
 msgid "Add"
-msgstr ""
+msgstr "Hinzufügen"
 
 msgid "You have disallowed camera use. It must be enabled to scan QR codes."
 msgstr "Sie haben die Nutzung der Kamera unterbunden. Die Kamera muss aktiviert sein, um QR Codes zu scannen."
