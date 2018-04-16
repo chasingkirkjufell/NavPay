@@ -3282,7 +3282,7 @@ msgid "This password can never be recovered or reset!"
 msgstr "このパスワードはリカバリーやリセットはできなくなります！"
 
 msgid "Are you sure?"
-msgstr ""
+msgstr "本当に大丈夫ですか？"
 
 msgid "Your wallet keys will be stored in plain text and you will be vulnerable to having you coins stolen. We highly recommend pressing no and choosing a password."
 msgstr "あなたのウォレットの鍵は簡単なので、このまま保存すると盗難にあいやすくなります。いいえを押してパスワードを変更することを強くお勧めします。"
