@@ -3328,9 +3328,6 @@ msgstr "arrendamiento, consulte la <a href="https://info.navcoin.org/knowledge-b
 msgid "Purchase NavCoin"
 msgstr "Compra NavCoin"
 
-msgid "To get started, you can buy NavCoin through our exchange partner Changelly."
-msgstr "Para comenzar, puede comprar NavCoin a través de nuestro socio de intercambio Changelly."
-
 msgid "To get started, you'll need to create a NavCoin wallet and get some NavCoin."
 msgstr "Para comenzar, deberá crear una billetera NavCoin y obtener un poco de NavCoin."
 

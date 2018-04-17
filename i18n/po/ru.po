@@ -3289,7 +3289,7 @@ msgstr "Покупка NavCoin"
 
 #: tab-home.html:21
 msgid "To get started, you can Buy NavCoin through our exchange partner Changelly."
-msgstr "Для начала работы с Nav, Вы можете купить NavCoin через нашего партнера -биржу Changelly"
+msgstr "Чтобы начать, Вы можете приобрести NavCoin через нашего партнёра – биржу Changelly"
 
 #: changelly.html:16
 msgid "Loading Changelly Exchange..."
@@ -3336,7 +3336,7 @@ msgid "This password can never be recovered or reset!"
 msgstr "Этот пароль уже никогда не будет восстановлен или запущен повторно!"
 
 msgid "Are you sure?"
-msgstr ""
+msgstr "Ты уверен?"
 
 msgid "Your wallet keys will be stored in plain text and you will be vulnerable to having you coins stolen. We highly recommend pressing no and choosing a password."
 msgstr "Ключи к Вашему кошельку будут храниться простым текстом и Вы будете уязвимы к краже коинов. Мы настоятельно рекомендуем нажать нет и выбрать пароль."
@@ -3382,9 +3382,6 @@ msgstr "Пожалуйста, посмотрите руководство NavCoi
 
 msgid "Purchase NavCoin"
 msgstr "Приобрести NavCoin"
-
-msgid "To get started, you can buy NavCoin through our exchange partner Changelly."
-msgstr "Чтобы начать, Вы можете приобрести NavCoin через нашего партнёра – биржу Changelly."
 
 msgid "To get started, you'll need to create a NavCoin wallet and get some NavCoin."
 msgstr "Чтобы начать, нужно создать кошелёк NavCoin и получить NavCoin."

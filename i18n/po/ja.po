@@ -3241,7 +3241,7 @@ msgstr "Nav Coinを購入する"
 
 #: tab-home.html:21
 msgid "To get started, you can Buy NavCoin through our exchange partner Changelly."
-msgstr "まずはじめに、協力している交換所のChangelly(チェンジリー）からNav Coinを購入します。"
+msgstr "はじめに、パートナーのChangelly交換所からNavCoinを購入することができます。"
 
 #: changelly.html:16
 msgid "Loading Changelly Exchange..."
@@ -3328,9 +3328,6 @@ msgstr "詳細については、NavCoinガイドを参照してください。"
 
 msgid "Purchase NavCoin"
 msgstr "NavCoinを購入する"
-
-msgid "To get started, you can buy NavCoin through our exchange partner Changelly."
-msgstr "はじめに、パートナーのChangelly交換所からNavCoinを購入することができます。"
 
 msgid "Buy NavCoin with:"
 msgstr "NavCoinを購入する"

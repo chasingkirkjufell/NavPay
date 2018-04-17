@@ -3242,4 +3242,91 @@ msgstr "Carregando corretora Changelly"
 
 #: tab-send.html:24
 msgid "Next"
-msgstr "Não é possível carregar o widget Changelly"
+msgstr "Próximo"
+
+msgid "NavTech / Private Payment Servers"
+msgstr "NavTech/ Servidores de pagamento privados"
+
+msgid "Encryption required"
+msgstr "Encriptação exigida"
+
+msgid "Backup required"
+msgstr "Backup requerido"
+
+msgid "Copy to clipboard"
+msgstr "Copiar para área de transferência"
+
+msgid "Show QR Code"
+msgstr "Mostrar código QR"
+
+msgid "Anyone with your backup phrase can access or spend your NavCoin."
+msgstr "Qualquer pessoa com sua frase de backup pode acessar ou gastar sua NavCoin."
+
+msgid "Buy NAV"
+msgstr "Comprar NAV"
+
+msgid "Wallet not encrypted. Set spending password to encrypt."
+msgstr "Carteira não criptografada. Definir senha de gasto para criptografar."
+
+msgid "Please enter a password to encrypt your wallet"
+msgstr "Por favor, digite uma senha para criptografar sua carteira"
+
+msgid "This password can never be recovered or reset!"
+msgstr "Esta senha nunca poderá ser recuperada ou redefinida!"
+
+msgid "Are you sure?"
+msgstr "Você tem certeza?"
+
+msgid "Your wallet keys will be stored in plain text and you will be vulnerable to having you coins stolen. We highly recommend pressing no and choosing a password."
+msgstr "Suas chaves da carteira serão armazenadas em texto simples e você estará vulnerável a ter moedas roubadas. É altamente recomendável pressionar "não" e escolher uma senha."
+
+msgid "Create password"
+msgstr "Criar senha"
+
+msgid "No password"
+msgstr "Nenhuma senha"
+
+msgid "NavCoin is different &ndash; it cannot be safely held with a bank or web service."
+msgstr "NavCoin é diferente & ndash; não pode ser segurado com um banco ou serviço da web."
+
+msgid "No NavTech servers found. Please add a NavTech server to make private payments."
+msgstr "Nenhum servidor NavTech encontrado. Por favor, adicione um servidor NavTech para fazer pagamentos privados."
+
+msgid "Invalid server"
+msgstr "Servidor inválido"
+
+msgid "NavTech Server successfully added"
+msgstr "Servidor NavTech adicionado com sucesso"
+
+msgid "Please enter a NavTech URL. e.g. https://SomeNavTechServer.com:3000"
+msgstr "Por favor insira um URL NavTech. Por exemplo: https://SomeNavTechServer.com:3000"
+
+msgid "Add a NavTech server to create private payments."
+msgstr "Adicione um servidor NavTech para criar pagamentos privados."
+
+msgid "No NavTech servers found. Please add a server to make private payments"
+msgstr "Nenhum servidor NavTech encontrado. Por favor, adicione um servidor para fazer pagamentos privados"
+
+msgid "Invalid NavTech Server"
+msgstr "Servidor NavTech inválido"
+
+msgid "Add"
+msgstr "Adicionar"
+
+msgid "You have disallowed camera use. It must be enabled to scan QR codes."
+msgstr "Você não permitiu o uso da câmera. Ela deve estar habilitada para escanear códigos QR."
+
+msgid "Please see the NavCoin guide for more information."
+msgstr "Por favor, consulte o guia NavCoin para mais informações."
+
+msgid "Purchase NavCoin"
+msgstr "Comprar NavCoin"
+
+msgid "Buy NavCoin with:"
+msgstr "Compre NavCoin com:"
+
+msgid "Credit Card"
+msgstr "Cartão de crédito"
+
+msgid "Cryptocurrency"
+msgstr "Criptomoeda"

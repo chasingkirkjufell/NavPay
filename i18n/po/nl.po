@@ -3091,7 +3091,7 @@ msgstr "Koop NavCoin "
 
 #: tab-home.html:21
 msgid "To get started, you can Buy NavCoin through our exchange partner Changelly."
-msgstr "Om te starten kunt u NavCoin kopen via onze beurspartner Changelly"
+msgstr "Om te starten kunt u NavCoin kopen via onze wissel partner Changelly."
 
 #: changelly.html:16
 msgid "Loading Changelly Exchange..."
@@ -3178,9 +3178,6 @@ msgstr "Zie de NavCoin gids voor meer informatie."
 
 msgid "Purchase NavCoin"
 msgstr "Koop NavCoin"
-
-msgid "To get started, you can buy NavCoin through our exchange partner Changelly."
-msgstr "Om te starten kunt u NavCoin kopen via onze wissel partner Changelly."
 
 msgid "Buy NavCoin with:"
 msgstr "Om te starten dient u een NavCoin portemonnee aan te maken en wat NavCoin hieraan toe te voegen."
