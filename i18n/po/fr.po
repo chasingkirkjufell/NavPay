@@ -3243,3 +3243,6 @@ msgstr "Chargement de la bourse d'échange Changelly..."
 #: tab-send.html:24
 msgid "Next"
 msgstr "Prochain"
+
+msgid "Generate new address from wallet: <span class="wallet-name">{{wallet.name || wallet.id}}</span>"
+msgstr "Générer une nouvelle adresse à partir du portefeuille: <span class="wallet-name">{{wallet.name || wallet.id}}</span>"

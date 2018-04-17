@@ -3345,4 +3345,5 @@ msgstr "Crear una billetera NavCoin"
 msgid "Show NavCoin address"
 msgstr "Mostrar la dirección NavCoin"
 
-
+msgid "Generate new address from wallet: <span class="wallet-name">{{wallet.name || wallet.id}}</span>"
+msgstr "Generar una nueva dirección desde la billetera: <span class="wallet-name">{{wallet.name || wallet.id}}</span>"

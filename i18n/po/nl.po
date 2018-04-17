@@ -3186,3 +3186,6 @@ msgstr "Koop NavCoin met:"
 
 msgid "Cryptocurrency"
 msgstr "Creditcard"
+
+msgid "Generate new address from wallet: <span class="wallet-name">{{wallet.name || wallet.id}}</span>"
+msgstr "Genereer een nieuw adres uit de portemonnee: <span class="wallet-name">{{wallet.name || wallet.id}}</span>"

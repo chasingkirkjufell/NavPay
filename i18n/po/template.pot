@@ -3319,3 +3319,6 @@ msgstr ""
 
 msgid "Cryptocurrency"
 msgstr ""
+
+msgid "Generate new address from wallet: <span class="wallet-name">{{wallet.name || wallet.id}}</span>"
+msgstr ""

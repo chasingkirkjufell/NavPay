@@ -3201,11 +3201,9 @@ msgstr "{{updatingTxHistoryProgress}} transakcje pobrane"
 msgid "{{wallet.m}}-of-{{wallet.n}}"
 msgstr "{{wallet.m}}-z-{{wallet.n}}"
 
-
-
 #: changelly.html:19
 msgid "Can't load Changelly widget"
-msgstr ""
+msgstr "Nie można załadować widgetu Changelly"
 
 #: tab-scan.html:26
 msgid "Attempting to load the camera, please wait."
@@ -3242,3 +3240,6 @@ msgstr "Ładowanie Giełdy Changelly..."
 #: tab-send.html:24
 msgid "Next"
 msgstr "Dalej"
+
+msgid "Generate new address from wallet: <span class="wallet-name">{{wallet.name || wallet.id}}</span>"
+msgstr "Wygeneruj nowy adres z portfela: <span class="wallet-name">{{wallet.name || wallet.id}}</span>"

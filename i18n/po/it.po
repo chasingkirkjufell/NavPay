@@ -3330,3 +3330,6 @@ msgstr "Carta di credito"
 
 msgid "Cryptocurrency"
 msgstr "Criptovaluta"
+
+msgid "Generate new address from wallet: <span class="wallet-name">{{wallet.name || wallet.id}}</span>"
+msgstr "Genera nuovo indirizzo dal portafoglio: <span class="wallet-name">{{wallet.name || wallet.id}}</span>"

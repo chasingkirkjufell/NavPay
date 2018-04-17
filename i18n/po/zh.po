@@ -3244,3 +3244,6 @@ msgstr "正在运行..."
 #: tab-send.html:24
 msgid "Next"
 msgstr "下面"
+
+msgid "Generate new address from wallet: <span class="wallet-name">{{wallet.name || wallet.id}}</span>"
+msgstr ""

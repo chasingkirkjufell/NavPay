@@ -3399,3 +3399,6 @@ msgstr "Создать кошелёк NavCoin"
 
 msgid "Show NavCoin address"
 msgstr "Показать адрес NavCoin"
+
+msgid "Generate new address from wallet: <span class="wallet-name">{{wallet.name || wallet.id}}</span>"
+msgstr "Создайте новый адрес из кошелька: <span class="wallet-name">{{wallet.name || wallet.id}}</span>"
