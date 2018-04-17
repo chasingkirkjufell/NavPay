@@ -3239,8 +3239,7 @@ msgstr "非公開（匿名）な支払い"
 msgid "Purchase NavCoin"
 msgstr "Nav Coinを購入する"
 
-#: tab-home.html:21
-msgid "To get started, you can Buy NavCoin through our exchange partner Changelly."
+msgid "To get started, you can buy NavCoin through our exchange partner Changelly."
 msgstr "はじめに、パートナーのChangelly交換所からNavCoinを購入することができます。"
 
 #: changelly.html:16

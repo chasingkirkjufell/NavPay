@@ -3227,7 +3227,6 @@ msgstr ""
 msgid "Purchase NavCoin"
 msgstr ""
 
-#: tab-home.html:21
 msgid "To get started, you can Buy NavCoin through our exchange partner Changelly"
 msgstr ""
 

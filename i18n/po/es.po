@@ -3232,8 +3232,7 @@ msgstr "Pago Privado"
 msgid "Purchase NavCoin"
 msgstr "Comprar NavCoin"
 
-#: tab-home.html:21
-msgid "To get started, you can Buy NavCoin through our exchange partner Changelly."
+msgid "To get started, you can buy NavCoin through our exchange partner Changelly"
 msgstr "Para comenzar, puede comprar NavCoin mediante nuestro socio de intercambio Changelly"
 
 #: changelly.html:16

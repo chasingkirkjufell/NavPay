@@ -3287,8 +3287,7 @@ msgstr "Конфиденциальный Платеж"
 msgid "Purchase NavCoin"
 msgstr "Покупка NavCoin"
 
-#: tab-home.html:21
-msgid "To get started, you can Buy NavCoin through our exchange partner Changelly."
+msgid "To get started, you can buy NavCoin through our exchange partner Changelly."
 msgstr "Чтобы начать, Вы можете приобрести NavCoin через нашего партнёра – биржу Changelly"
 
 #: changelly.html:16
