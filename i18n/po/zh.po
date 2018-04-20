@@ -171,11 +171,11 @@ msgstr "所有地址"
 
 #: www/views/modals/wallet-balance.html:18
 msgid "All of your NavCoin wallet balance may not be available for immediate spending."
-msgstr "所有您的比特币的钱包余额可能无法用于直接支出。"
+msgstr "所有您的NavCoin的钱包余额可能无法用于直接支出。"
 
 #: www/views/tab-receive.html:25
 msgid "All signing devices must be added to this multisig wallet before NavCoin addresses can be created."
-msgstr "比特币地址可以创建之前，签名的所有设备都必须都添加到这个对数钱包。"
+msgstr "NavCoin地址可以创建之前，签名的所有设备都必须都添加到这个对数钱包。"
 
 #: www/views/tab-scan.html:21
 msgid "Allow Camera Access"
@@ -219,7 +219,7 @@ msgstr "本程序有一个可用的更新。为了您的安全，请更新到最
 
 #: www/views/backupWarning.html:14
 msgid "Anyone with your backup phrase can access or spend your NavCoin."
-msgstr "任何人只要持有你的备份短语，就可以访问或者花掉你的比特币。"
+msgstr "任何人只要持有你的备份短语，就可以访问或者花掉你的NavCoin。"
 
 #: www/views/addresses.html:94
 msgid "Approximate NavCoin network fee to transfer wallet's balance (with normal priority)"
@@ -338,37 +338,37 @@ msgstr "NavPay Visa&reg; 牌"
 
 #: www/views/addressbook.add.html:38
 msgid "NavCoin Address"
-msgstr "比特币地址"
+msgstr "NavCoin地址"
 
 #: www/views/modals/chooseFeeLevel.html:4
 #: www/views/preferencesFee.html:4
 #: www/views/tab-settings.html:85
 msgid "NavCoin Network Fee Policy"
-msgstr "比特币网络手续费策略"
+msgstr "NavCoin网络手续费策略"
 
 #: www/views/paymentUri.html:10
 msgid "NavCoin URI is NOT valid!"
-msgstr "比特币 URI 无效！"
+msgstr "NavCoin URI 无效！"
 
 #: www/views/tab-settings.html:63
 msgid "NavCoin Unit"
-msgstr "比特币单位"
+msgstr "NavCoin单位"
 
 #: www/views/onboarding/tour.html:31
 msgid "NavCoin is a currency."
-msgstr "比特币是一种货币。"
+msgstr "NavCoin是一种货币。"
 
 #: www/views/onboarding/disclaimer.html:15
 msgid "NavCoin is different &ndash; it cannot be safely held with a bank or web service."
-msgstr "比特币是不同 — — 它不能安全地举行以银行或 web 服务。"
+msgstr "NavCoin是不同 — — 它不能安全地举行以银行或 web 服务。"
 
 #: www/views/onboarding/tour.html:18
 msgid "NavCoin is secure,<br>digital money."
-msgstr "比特币是安全的 <br>数字货币。"
+msgstr "NavCoin是安全的 <br>数字货币。"
 
 #: www/views/preferencesFee.html:11
 msgid "NavCoin transactions include a fee collected by miners on the network."
-msgstr "比特币交易包括在网络上被矿工所收取的费用。"
+msgstr "NavCoin交易包括在网络上被矿工所收取的费用。"
 
 #: www/views/modals/txp-details.html:36
 msgid "Broadcast Payment"
@@ -389,15 +389,15 @@ msgstr "不受支持的浏览器"
 
 #: www/views/includes/buyAndSellCard.html:4
 msgid "Buy &amp; Sell NavCoin"
-msgstr "购买或出售比特币"
+msgstr "购买或出售NavCoin"
 
 #: www/views/tab-send.html:35
 msgid "Buy NavCoin"
-msgstr "购买比特币"
+msgstr "购买NavCoin"
 
 #: src/js/services/onGoingProcess.js:40
 msgid "Buying NavCoin..."
-msgstr "正在发送 比特币..."
+msgstr "正在发送 NavCoin..."
 
 #: src/js/services/onGoingProcess.js:12
 msgid "Calculating fee"
@@ -711,7 +711,7 @@ msgstr "创建自己的免费钱包"
 #: www/views/tab-home.html:77
 #: www/views/tab-send.html:36
 msgid "Create NavCoin wallet"
-msgstr "创建比特币的钱包"
+msgstr "创建NavCoin的钱包"
 
 #: www/views/tab-create-personal.html:129
 msgid "Create new wallet"
@@ -817,7 +817,7 @@ msgstr "下载"
 
 #: www/views/addresses.html:19
 msgid "Each NavCoin wallet can generate billions of addresses from your 12-word backup. A new address is automatically generated and shown each time you receive a payment."
-msgstr "每个比特币钱包可以从您的 12 字备份生成亿万个地址。一个新的地址是自动生成和显示每个时间你收到付款。"
+msgstr "每个NavCoin钱包可以从您的 12 字备份生成亿万个地址。一个新的地址是自动生成和显示每个时间你收到付款。"
 
 #: src/js/services/feeService.js:13
 msgid "Economy"
@@ -1272,7 +1272,7 @@ msgstr "我知道了"
 
 #: www/views/onboarding/disclaimer.html:21
 msgid "I understand that if this app is moved to another device or deleted, my NavCoin can only be recovered with the backup phrase."
-msgstr "我明白是否这个应用程序是搬到另一个设备或删除，我比特币可以只能进行恢复与备份的短语。"
+msgstr "我明白是否这个应用程序是搬到另一个设备或删除，我NavCoin可以只能进行恢复与备份的短语。"
 
 #: www/views/onboarding/disclaimer.html:18
 msgid "I understand that my funds are held securely on this device, not by a company."
@@ -1415,7 +1415,7 @@ msgstr "此电子邮件地址是正确的？"
 
 #: www/views/addresses.html:25
 msgid "It's a good idea to avoid reusing addresses - this both protects your privacy and keeps your NavCoins secure against hypothetical attacks by quantum computers."
-msgstr "它是一个好主意，以避免重用地址 — — 这既能保护您的隐私又保持您的比特币安全假设攻击由量子计算机。"
+msgstr "它是一个好主意，以避免重用地址 — — 这既能保护您的隐私又保持您的NavCoin安全假设攻击由量子计算机。"
 
 #: src/js/controllers/backup.js:76
 msgid "It's important that you write your backup phrase down correctly. If something happens to your wallet, you'll need this backup to recover your money. Please review your backup and try again."
@@ -1611,7 +1611,7 @@ msgstr "没钱包"
 
 #: www/views/onboarding/backupRequest.html:5
 msgid "No backup, no NavCoin."
-msgstr "没有备份，没有比特币。"
+msgstr "没有备份，没有NavCoin。"
 
 #: www/views/addressbook.html:19
 msgid "No contacts yet"
@@ -1688,7 +1688,7 @@ msgstr "备注"
 
 #: www/views/modals/wallets.html:25
 msgid "Notice: only 1-1 (single signature) wallets can be used for sell NavCoin"
-msgstr "注意︰ 只有 1-1 （单签名） 钱包可以用于卖比特币"
+msgstr "注意︰ 只有 1-1 （单签名） 钱包可以用于卖NavCoin"
 
 #: www/views/preferencesNotifications.html:3
 #: www/views/tab-settings.html:46
@@ -1803,7 +1803,7 @@ msgstr "粘贴备份的纯文本代码"
 
 #: www/views/bitpayCardIntro.html:28
 msgid "Pay 0% fees to turn NavCoin into dollars."
-msgstr "0%付费以比特币变成美元。"
+msgstr "0%付费以NavCoin变成美元。"
 
 #: www/views/modals/paypro.html:18
 msgid "Pay To"
@@ -2174,7 +2174,7 @@ msgstr "搜索交易"
 
 #: www/views/tab-send.html:13
 msgid "Search or enter NavCoin address"
-msgstr "搜索或输入比特币地址"
+msgstr "搜索或输入NavCoin地址"
 
 #: www/views/modals/search.html:16
 msgid "Search transactions"
@@ -2203,7 +2203,7 @@ msgstr "自签名证书"
 
 #: src/js/services/onGoingProcess.js:41
 msgid "Selling NavCoin..."
-msgstr "出售比特币......"
+msgstr "出售NavCoin......"
 
 #: www/views/feedback/send.html:13
 #: www/views/feedback/send.html:43
@@ -2343,7 +2343,7 @@ msgstr "显示高级选项"
 
 #: www/views/tab-send.html:37
 msgid "Show NavCoin address"
-msgstr "显示比特币地址"
+msgstr "显示NavCoin地址"
 
 #: www/views/tab-send.html:59
 msgid "Show more"
@@ -2398,7 +2398,7 @@ msgstr ""
 
 #: www/views/tab-send.html:28
 msgid "Start sending NavCoin"
-msgstr "开始发送比特币"
+msgstr "开始发送NavCoin"
 
 #: src/js/routes.js:118
 msgid "Starting..."
@@ -2434,7 +2434,7 @@ msgstr "此操作无法撤消"
 
 #: www/views/onboarding/welcome.html:5
 msgid "Take control of your money,<br>get started with NavCoin."
-msgstr "把你的钱，<br>得到控制开始用比特币。"
+msgstr "把你的钱，<br>得到控制开始用NavCoin。"
 
 #: www/views/walletDetails.html:140
 #: www/views/walletDetails.html:60
@@ -2483,15 +2483,15 @@ msgstr "Ledger Chrome 应用程序未安装"
 
 #: www/views/modals/wallet-balance.html:55
 msgid "The amount of NavCoin immediately spendable from this wallet."
-msgstr "比特币立即可从这个钱包的金额。"
+msgstr "NavCoin立即可从这个钱包的金额。"
 
 #: www/views/modals/wallet-balance.html:93
 msgid "The amount of NavCoin stored in this wallet that is allocated as inputs to your pending transaction proposals. The amount is determined using unspent transaction outputs associated with this wallet and may be more than the actual amounts associated with your pending transaction proposals."
-msgstr "比特币存储在分配作为你挂起的事务建议的输入这个钱包中的金额。量确定使用未用余额交易记录输出与这个钱包关联，可能会与您挂起的事务建议相关联的实际数额超过。"
+msgstr "NavCoin存储在分配作为你挂起的事务建议的输入这个钱包中的金额。量确定使用未用余额交易记录输出与这个钱包关联，可能会与您挂起的事务建议相关联的实际数额超过。"
 
 #: www/views/modals/wallet-balance.html:74
 msgid "The amount of NavCoin stored in this wallet with less than 1 blockchain confirmation."
-msgstr "比特币存储在与小于 1 blockchain 确认这个钱包中的金额。"
+msgstr "NavCoin存储在与小于 1 blockchain 确认这个钱包中的金额。"
 
 #: www/views/tab-import-phrase.html:5
 msgid "The derivation path"
@@ -2546,7 +2546,7 @@ msgstr "花费提议不是未决"
 
 #: www/views/modals/wallet-balance.html:36
 msgid "The total amount of NavCoin stored in this wallet."
-msgstr "比特币存储在这个钱包的总量。"
+msgstr "NavCoin存储在这个钱包的总量。"
 
 #: www/views/preferencesHistory.html:27
 msgid "The transaction history and every new incoming transaction are cached in the app. This feature clean this up and synchronizes again from the server"
@@ -2581,11 +2581,11 @@ msgstr "这个应用程序太棒了 ！"
 
 #: www/views/onboarding/tour.html:47
 msgid "This app stores your NavCoin with cutting-edge security."
-msgstr "此应用程序商店你比特币与尖端的安全。"
+msgstr "此应用程序商店你NavCoin与尖端的安全。"
 
 #: src/js/controllers/confirm.js:464
 msgid "This NavCoin payment request has expired."
-msgstr "这比特币付款请求已过期。"
+msgstr "这NavCoin付款请求已过期。"
 
 #: www/views/join.html:130
 #: www/views/tab-create-personal.html:101
@@ -2626,11 +2626,11 @@ msgstr "发送到"
 
 #: www/views/tab-send.html:32
 msgid "To get started, Buy NavCoin or share your address. You can receive NavCoin from any wallet or service."
-msgstr "若要开始，请买比特币或共享您的地址。你可以从任何钱包或服务接收比特币。"
+msgstr "若要开始，请买NavCoin或共享您的地址。你可以从任何钱包或服务接收NavCoin。"
 
 #: www/views/tab-send.html:33
 msgid "To get started, you'll need to create a NavCoin wallet and get some NavCoin."
-msgstr "若要开始，您将需要创建一个比特币的钱包，并获得一些比特币。"
+msgstr "若要开始，您将需要创建一个NavCoin的钱包，并获得一些NavCoin。"
 
 #: src/js/services/bitpayAccountService.js:73
 msgid "To {{reason}} you must first add your NavPay account - {{email}}"
@@ -2714,7 +2714,7 @@ msgstr ""
 
 #: www/views/bitpayCardIntro.html:18
 msgid "Turn NavCoin into dollars, swipe anywhere Visa<sup>&reg;</sup> is accepted."
-msgstr "比特币变成美元，刷在接受 Visa<sup>®</sup> 的任何地方。"
+msgstr "NavCoin变成美元，刷在接受 Visa<sup>®</sup> 的任何地方。"
 
 #: www/views/tab-import-phrase.html:17
 msgid "Type the Recovery Phrase (usually 12 words)"
@@ -3071,7 +3071,7 @@ msgstr "您可以通过签约我们 Crowdin 社区翻译网站作出贡献。我
 
 #: www/views/tab-scan.html:16
 msgid "You can scan NavCoin addresses, payment requests, paper wallets, and more."
-msgstr "您可以扫描比特币地址、 付款申请、 纸钱包和更多。"
+msgstr "您可以扫描NavCoin地址、 付款申请、 纸钱包和更多。"
 
 #: src/js/controllers/preferencesAbout.js:14
 msgid "You can see the latest developments and contribute to this open source app by visiting our project on GitHub."
@@ -3079,7 +3079,7 @@ msgstr "你可以看到最新的事态发展和贡献这个开放源码应用程
 
 #: www/views/onboarding/tour.html:19
 msgid "You can spend NavCoin at stores and websites worldwide."
-msgstr "你可以花比特币在数以百万计的网站和世界各地的商店。"
+msgstr "你可以花NavCoin在数以百万计的网站和世界各地的商店。"
 
 #: www/views/backup.html:12
 msgid "You can still export it from Advanced &gt; Export."
@@ -3091,7 +3091,7 @@ msgstr "你可以换其他货币，如美元、 欧元或英镑。"
 
 #: www/views/onboarding/tour.html:46
 msgid "You control your NavCoin."
-msgstr "您可以控制您的比特币。"
+msgstr "您可以控制您的NavCoin。"
 
 #: www/views/modals/bitpay-card-confirmation.html:5
 msgid "You will need to log back for fill in your NavPay Card."
@@ -3107,10 +3107,10 @@ msgstr ""
 
 #: www/views/includes/confirmBackupPopup.html:6
 msgid "Your NavCoin wallet is backed up!"
-msgstr "你的比特币钱包被备份 ！"
+msgstr "你的NavCoin钱包被备份 ！"
 
 msgid "Your NavCoin wallet is ready!"
-msgstr "你的比特币钱包是准备好了 ！"
+msgstr "你的NavCoin钱包是准备好了 ！"
 
 #: www/views/feedback/send.html:42
 msgid "Your ideas, feedback, or comments"
@@ -3186,7 +3186,7 @@ msgstr "{{appName}} 中的区块链信息依赖于 Bitcore Wallet Service (BWS)�
 
 #: src/js/controllers/confirm.js:354
 msgid "{{fee}} will be deducted for NavCoin networking fees."
-msgstr "{{fee}} 将比特币网络费用中扣除。"
+msgstr "{{fee}} 将NavCoin网络费用中扣除。"
 
 #: www/views/confirm.html:87
 msgid "{{tx.txp[wallet.id].feeRatePerStr}}  of the sending amount"
@@ -3200,8 +3200,6 @@ msgstr "下载的 {{updatingTxHistoryProgress}} 交易"
 #: www/views/includes/walletInfo.html:12
 msgid "{{wallet.m}}-of-{{wallet.n}}"
 msgstr "{{wallet.m}}{{wallet.n}}"
-
-
 
 #: changelly.html:19
 msgid "Can't load Changelly widget"
@@ -3244,6 +3242,96 @@ msgstr "正在运行..."
 #: tab-send.html:24
 msgid "Next"
 msgstr "下面"
+
+msgid "NavTech / Private Payment Servers"
+msgstr "NavTech / 匿名付费伺服器"
+
+msgid "Encryption required"
+msgstr "需要加密"
+
+msgid "Backup required"
+msgstr "需要备份"
+
+msgid "Copy to clipboard"
+msgstr "复制到剪贴簿"
+
+msgid "Show QR Code"
+msgstr "显示QR码"
+
+msgid "Anyone with your backup phrase can access or spend your NavCoin."
+msgstr "任何拥有你备份辞汇的使用者将可以使用你的NavCoin"
+
+msgid "Buy NAV"
+msgstr "购买NAV"
+
+msgid "Wallet not encrypted. Set spending password to encrypt."
+msgstr "钱包未加密，请设定支出密码以加密。"
+
+msgid "Please enter a password to encrypt your wallet"
+msgstr "请输入密码以加密钱包。"
+
+msgid "This password can never be recovered or reset!"
+msgstr "此密码将无法被重新取得或是重新设定。"
+
+msgid "Are you sure?"
+msgstr "你确定?"
+
+msgid "Your wallet keys will be stored in plain text and you will be vulnerable to having you coins stolen. We highly recommend pressing no and choosing a password."
+msgstr "你的钱包密码将会以基本辞汇的方式储存且你将较易于遭窃。我们强烈建议你选择否且设定密码。"
+
+msgid "Create password"
+msgstr "设定密码"
+
+msgid "No password"
+msgstr "无密码"
+
+msgid "NavCoin is different &ndash; it cannot be safely held with a bank or web service."
+msgstr "NavCoin是较为不同的 &ndash 无法安全地由银行或是网路服务保管"
+
+msgid "No NavTech servers found. Please add a NavTech server to make private payments."
+msgstr "找不到NavTech伺服器。请新增NavTech伺服器后再使用匿名付费。"
+
+msgid "Invalid server"
+msgstr "无效的伺服器。"
+
+msgid "NavTech Server successfully added"
+msgstr "成功新增NavTech伺服器。"
+
+msgid "Please enter a NavTech URL. e.g. https://SomeNavTechServer.com:3000"
+msgstr "请输入NavTech连结。如: https://SomeNavTechServer.com:3000"
+
+msgid "Add a NavTech server to create private payments."
+msgstr "新增NavTech伺服器以使用匿名付费"
+
+msgid "No NavTech servers found. Please add a server to make private payments"
+msgstr "找不到NavTech伺服器。请新增伺服器后再使用匿名付费。"
+
+msgid "Invalid NavTech Server"
+msgstr "无效的NavTech伺服器"
+
+msgid "Add"
+msgstr "新增"
+
+msgid "You have disallowed camera use. It must be enabled to scan QR codes."
+msgstr "你并未授权使用相机，需授权后才能扫描QR码。"
+
+msgid "Please see the NavCoin guide for more information."
+msgstr "请参照NavCoin用户指南以获得更多资讯。"
+
+msgid "Purchase NavCoin"
+msgstr "购买NavCoin"
+
+msgid "To get started, you can buy NavCoin through our exchange partner Changelly."
+msgstr "开始使用时，你可以在交易所伙伴Changelly购买NavCoin"
+
+msgid "Buy NavCoin with:"
+msgstr "购买Nav使用:"
+
+msgid "Credit Card"
+msgstr "信用卡"
+
+msgid "Cryptocurrency"
+msgstr "加密货币"
 
 msgid "Generate new address from wallet: <span class="wallet-name">{{wallet.name || wallet.id}}</span>"
 msgstr ""
